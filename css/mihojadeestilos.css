@@ -1,0 +1,35 @@
+body {
+    font-family: 'Zilla Slab', serif;
+/*    background-color: #dba646;*/
+}
+.navbar {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: transparent !important;
+/*    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;*/
+}
+.nav-item {
+    font-size: 0.75rem;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #dba646;
+}
+@media(max-width: 768px){
+    .nav-link:hover {
+        border-bottom: none;
+    }
+}
+#showcase {
+    background: url("../images/web-0.jpg") center / cover no-repeat;
+    min-height: 750px;
+    opacity: 0.5;
+/*    position: relative;*/
+}
+.display-1 {
+    min-width: 900px;
+    font-family: 'Zilla Slab', serif;
+    color: #dba646;
+}
