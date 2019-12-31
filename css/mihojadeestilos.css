@@ -24,12 +24,102 @@ body {
 }
 #showcase {
     background: url("../images/web-0.jpg") center / cover no-repeat;
-    min-height: 750px;
+    min-height: 50rem;
     opacity: 0.5;
 /*    position: relative;*/
 }
 .display-1 {
-    min-width: 900px;
+    min-width: 87%;
     font-family: 'Zilla Slab', serif;
     color: #dba646;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 3%;
+}
+#paella {
+    background-color: #dba646;
+}
+#popupSeries {
+    margin-top: 10%;
+    margin-left: 15%;
+    max-width: 80%;
+    padding-top: 10%;
+}
+#event {
+    padding-top: 3%;
+    min-height: 35rem;
+    margin-top: 2.5%;
+}
+#spEvent {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+#tasting {
+    font-size: 3rem;
+}
+#fechaEvento {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+#about {
+    padding-bottom: 7%;
+    background-color: #D6D7C9;
+}
+#menu {
+    padding-top: 10%;
+    margin-left: 3%;
+    padding-bottom: 25%;
+}
+#chef {
+    background-color: #D6D7C9;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left:5%;
+    padding-right: 5%;
+}
+#titChef {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+#nomChef {
+    margin-left: 3%;
+    margin-top: 3%;
+    font-size: 3.5rem;
+}
+#kindness {
+    font-family: 'Raleway', sans-serif;
+    margin-left: 3%;
+    color: #dba646;
+    font-weight: 600;
+}
+#descripcion {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+#fotoChef {
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    max-width: 90%;
+}
+#contact {
+    padding-top: 10%;
+    background: url("../images/web-1.jpg") right / cover no-repeat;
+    min-height: 30rem;
+    padding-right: 30%;
+}
+#map {
+    margin-top: 10%;
+    margin-left: 3%;
+}
+#sketchesofSpain {
+    background-color: #dba646;
+    padding-top: 15%;
+    padding-right: 10%;
+    padding-bottom: 15%;
 }

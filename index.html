@@ -20,7 +20,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 px-0">
-          <nav class="navbar navbar-expand-md navbar-light fixed-top">
+          <nav class="navbar navbar-expand-md navbar-light">
             <a href="#" class="navbar brand">
               <h3 class="mb-0">SKETCHES</h3>
             </a>
@@ -54,8 +54,9 @@
           </nav>
           <section id="showcase" class="d-flex align-items-center">
             <div class="overlay"></div>
-            <div class="header container text-#dba646 text-center"></div>
+            <div class="header container text-#dba646 text-center">
               <h1 class="display-1">North Spanish Bites</h1>
+            </div>
           </section>
         </div>
         <!--.col -->
@@ -65,12 +66,14 @@
     <section class="main">
       <div class="row" id="paella">
         <div class="col-6">
-          <img class="img-fluid" src="images/pop up series.jpg" alt="" />
+          <p id="popupSeries">
+            <img class="img-fluid" src="images/paella.jpg" alt="" />
+          </p,>
         </div>
-        <div class="col-6">
-          <p>SPECIAL EVENT</p>
-          <h1>North Spanish Tasting</h1>
-          <h3 id="evento">Thursday, Nov. 14th, 7pm</h3>
+        <div class="col-6" id="event">
+          <p id="spEvent">SPECIAL EVENT</p><br>
+          <h1 id="tasting">North Spanish Tasting</h1><br>
+          <h3 id="fechaEvento">Thursday, Nov. 14<sup>th</sup>, 7pm</h3>
           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas sequi corporis deleniti facilis consequatur? Repudiandae sunt porro eos. Aspernatur alias cupiditate non cum omnis veniam, repudiandae delectus qui possimus eius.</p>
           <p>Tickets</p>
         </div>
@@ -93,39 +96,133 @@
           <img class="img-fluid" src="images/puzzle.jpg" alt="" />          
         </div>
         <div class="col-4">
-          <h2>PINCHOS</h2>
-          <p class="spaMenu">Txaca</p>
-          <p class="engMenu"><em>Crab and mayonnaise</em></p>
-          <p class="spaMenu">Caballa y mayonesa</p>
-          <p class="engMenu"><em>Mackerel and mayonnaise</em></p>
-          <p class="spaMenu">Matrimonio</p>
-          <p class="engMenu"><em>Anchovies and green peppers</em></p>
-          <p class="spaMenu">Queso fresco y salmón</p>
-          <p class="engMenu"><em>Queso fresco and salmon</em></p>
-          <p class="spaMenu">Ensaladilla rusa</p>
-          <p class="engMenu"><em>Potato salad</em></p>
-          <p class="spaMenu">Boquerón</p>
-          <p class="engMenu"><em>Marinated anchovie</em></p>
-          <p class="spaMenu">Tortilla de patatas</p>
-          <p class="engMenu"><em>Spanish omelette</em></p>
-          <p class="spaMenu">+ Assorted new pinchos daily</p>
+          <h5>PINCHOS</h5>
+          <p>Txaca<br>
+          <em>Crab and mayonnaise</em></p>
+          <p>Caballa y mayonesa<br>
+          <em>Mackerel and mayonnaise</em></p>
+          <p>Matrimonio<br>
+          <em>Anchovies and green peppers</em></p>
+          <p>Queso fresco y salmón<br>
+          <em>Queso fresco and salmon</em></p>
+          <p>Ensaladilla rusa<br>
+          <em>Potato salad</em></p>
+          <p>Boquerón<br>
+          <em>Marinated anchovie</em></p>
+          <p>Tortilla de patatas<br>
+          <em>Spanish omelette</em></p>
+          <p>+ Assorted new pinchos daily</p>
+          <h5>ARROCES</h5>
+          <p>Paella<br>
+          <em>Spanish rice recipe cooked with chicken, rabbit, green beans, butter beans and rosemary.</em></p>
+          <p>Paella de pescado<br>
+          <em>Spanish rice recipe cooked with mussels, shrimp and squid.</em></p>
+          <p>Arroz abanda<br>
+          <em>Spanish rice recipe cooked with chicken, rabbit, green beans, butter beans and rosemary.</em></p>
+          <p>Arroz negro<br>
+          <em>Spanish rice recipe cooked with mussels, shrimp and squid.</em></p>
+          <h5>PLATOS</h5>
+          <p>Rabo de toro<br>
+          <em>Ox tail wrapped in ham</em></p>
+          <p>Chipirones en su tinta<br>
+          <em>Squid in its own ink</em></p>
+          <p>Pulpo a la gallega<br>
+          <em>Octopus with potatos and paprika</em></p>
+          <p>Cocido<br>
+          <em>Chickpea stew with pork belly, blood sausage and chorizo</em></p>
+          <h5>POSTRES</h5>
+          <p>Torrija<br>
+          <em>Bread soaked in milk and fried in batter with citric and cinnamon. Served a la mode.</em></p>
+          <p>Arroz con leche<br>
+          <em>Rice pudding</em></p>
+          <p>Quesada<br>
+          <em>Spanish take on cheesecake</em></p>
+          <p>Queso y membrillo<br>
+          <em>Cheese with quince jam</em></p>
         </div>
 
         <div class="col-4">
-          
+          <h5>WINES</h5>
+          <h6>REDS</h6>
+          <p>Coto de Hayas<br>
+          <em>Garnacha centenaria. Campo de Borja, Spain, 2016</em></p>
+          <p>San Isidro<br>
+          <em>Monastrell. Jumilla, Spain, 2017</em></p>
+          <p>Camino de Navaherreros<br>
+          <em>San Martín de Valdeiglesias, Spain, 2017</em></p>
+          <p>Gulp/Hablo<br>
+          <em>Parra Jimenez, Spain, 2018</em></p>
+          <h6>WHITES</h6>
+          <p>Luzón colección<br>
+          <em>Jumilla, Spain, 2018</em></p>
+          <p>Protocolo<br>
+          <em>Villarta-Cuenca, Spain, 2018</em></p>
+          <p>Ethereo<br>
+          <em>Albariño. Rias Baixas, Spain, 2018</em></p>
+          <p>Txomin Etxaniz<br>
+          <em>Txakolina. País Vasco, Spain, 2018</em></p>
+          <h5>COCKTAILS</h5>
+          <h6>GIN TONICS</h6>
+          <p>Cucumber<br>
+          <em>Mahón Gin, cranberries, cinnamon, blood orange</em></p>
+          <p>Cranberries<br>
+          <em>Hendrick’s Gin, cucumber, pomelo, basil</em></p>
+          <p>Grapefruit<br>
+          <em>Mahón Gin, grapefruit, star anis</em></p>
+          <h6>THE CLASSICS</h6>
+          <p>Manhattan<br>
+          <em>Mahón Gin, cranberries, cinnamon, blood orange</em></p>
+          <p>Old Fashioned<br>
+          <em>Mahón Gin, grapefruit, star anis</em></p>
+          <p>Negroni<br>
+          <em>Hendrick’s Gin, cucumber, pomelo, basil</em></p>
+          <p>White Russian<br>
+          <em>Mahón Gin, cranberries, cinnamon, blood orange</em></p>
+          <h6>BEERS</h6>
+          <p>Black Matter<br>
+          <em>Stout</em></p>
+          <p>Martin House<br>
+          <em>IPA</em></p>
+          <p>Shiner<br>
+          <em>Pilsener</em></p>
+          <p>Local Buzz<br>
+          <em>Wheat Ale</em></p>
+          <h6>CIDER</h6>
+          <p>Batzoki<br>
+          <em>País Vasco, Spain</em></p><br><br><br>
         </div>
-      </div>
       <div class="row" id="chef">
-        <div class="col-6">
-
+        <div class="col-6" id="textChef">
+          <p>
+            <h4 id="titChef">CHEF</h4>
+          </p>
+          
+          <p id="nomChef">
+            Iñaki
+            <br>
+            Betran
+          </p>
+          <br>
+          <p>
+            <h6 id="kindness">Kindness in food</h6>
+          </p>
+          <p id="descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Ut vel lacus erat. Curabitur pulvinar ligula facilisis
+            felis rutrum, et euismod odio pretium. Aliquam
+            elementum, felis a posuere sollicitudin, erat
+            sem accumsan nisi.</p>
         </div>
         <div class="col-6">
-          <img class="img-fluid" src="images/iñaki betran.jpg" alt="" />
+          <p id="fotoChef">
+            <img class="img-fluid" src="images/fotoChef.jpg" alt="" />
+          </p>
         </div>
       </div>
       <div class="row" id="contact">
         <div class="col-6">
-          <img class="img-fluid" src="images/googlemaps.jpg" alt="" />
+          <p id="map">
+            <img class="img-fluid" src="images/googlemaps.jpg" alt="" />
+          </p>
         </div>
         <div class="col-6">
 
