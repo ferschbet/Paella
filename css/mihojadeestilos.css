@@ -5,11 +5,18 @@ body {
 .navbar {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    background-color: transparent !important;
-/*    position: absolute;
+    background-color: black;
+/*  position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;*/
+}
+.bg-dark {
+    background-color: transparent !important;
+}
+.bg-dark.scrolled {
+    background-color: #030A10 !important;
 }
 .nav-item {
     font-size: 0.75rem;
@@ -17,16 +24,22 @@ body {
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
+@media screen and (max-width: 768px) {
+    .img-fluid {
+      height: 100px;
+      width: 100px;
+    }
+}
 @media(max-width: 768px){
     .nav-link:hover {
         border-bottom: none;
     }
 }
-#showcase {
+#hero {
     background: url("../images/web-0.jpg") center / cover no-repeat;
-    min-height: 50rem;
-    opacity: 0.5;
-/*    position: relative;*/
+    height: 100vh;
+    opacity: 1;
+    position: relative;
 }
 .display-1 {
     min-width: 87%;
