@@ -58,27 +58,28 @@
       </nav>
     </header>
       <section id="hero" class="d-flex align-items-center">
-        <div class="overlay"></div>
         <div class="header container text-light text-center">
-          <h1 class="display-1">North Spanish Bites</h1>
-          <p><hr class="linea" width="10" size="2"></p>
+          <h1 class="display-1 justify-content-center">North Spanish Bites</h1>
+          <div class="container justify-content-center" id="linea"></div>
+          <div class="container justify-content-center" id="address">321, Zang Blvd.</div>
+          <div class="container justify-content-center" id="cityAddress">OAK CLIFF, DALLAS, TX</div>
         </div>
       </section>
-<section class="main">
-      <div class="row" id="paella">
-        <div class="col-6">
-          <p id="popupSeries">
-            <img class="img-fluid" src="images/paella.jpg" alt="" />
-          </p,>
+      <section class="main">
+        <div class="row" id="paella">
+          <div class="col-6">
+            <p id="popupSeries">
+              <img class="img-fluid" src="images/paella.jpg" alt="" />
+            </p,>
+          </div>
+          <div class="col-6" id="event">
+            <p id="spEvent">SPECIAL EVENT</p><br>
+            <h1 id="tasting">North Spanish Tasting</h1><br>
+            <h3 id="fechaEvento">Thursday, Nov. 14<sup>th</sup>, 7pm</h3>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas sequi corporis deleniti facilis consequatur? Repudiandae sunt porro eos. Aspernatur alias cupiditate non cum omnis veniam, repudiandae delectus qui possimus eius.</p>
+            <p>Tickets</p>
+          </div>
         </div>
-        <div class="col-6" id="event">
-          <p id="spEvent">SPECIAL EVENT</p><br>
-          <h1 id="tasting">North Spanish Tasting</h1><br>
-          <h3 id="fechaEvento">Thursday, Nov. 14<sup>th</sup>, 7pm</h3>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas sequi corporis deleniti facilis consequatur? Repudiandae sunt porro eos. Aspernatur alias cupiditate non cum omnis veniam, repudiandae delectus qui possimus eius.</p>
-          <p>Tickets</p>
-        </div>
-      </div>
       <div class="row" id="about">
         <div class="col-6">
           <p>ABOUT</p>
@@ -256,11 +257,12 @@
     <!--Cambio de color al hacer scroll-->
     <script>
       $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 930);
+        $('nav').toggleClass('scrolled', $(this).scrollTop() >= 850);
       });
+      //Ocultación del logo al hacer scroll hacia abajo
       $(window).scroll(function(){
           var $this = $(this);
-          if ($this.scrollTop() >= 150) {
+          if ($this.scrollTop() >= 950) {
               $(".navbar").addClass("scrolled");
           } else {
               $(".navbar").removeClass("scrolled");
