@@ -16,12 +16,21 @@ body {
     background-color: #030A10 !important;
 }
 .navbar-brand {
-    left:0;
+/*    left:0;*/
+/*    -ms-transform:translate(0);
+    transform:translate(0);*/
+    opacity:1;
 }
 .scrolled .navbar-brand {
-    position:relative;
+/*    position:relative;
     left:-100em;
-    transition:all 1000ms ease 250ms;
+    transition:all 1000ms ease 250ms;*/
+/*    -ms-transform:translate(-100em);
+    transform:translate(-100em);
+    transition:all 1000ms ease 250ms;*/
+    position:relative;
+    transition:opacity 500ms ease 100ms;
+    opacity:0; 
 }
 .logo {
     position: absolute;
@@ -30,9 +39,6 @@ body {
     height: 170px;
     width: 170px;
  }
-.nav-item {
-    font-size: 0.75rem;
-}
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
@@ -41,8 +47,8 @@ body {
         height: 85px;
         width: 85px;
         position: absolute;
-        left: 6.48vh;
-    
+        top: 1.5vh;
+        left: 18vw;
     }
 }
 @media(max-width: 768px){
@@ -121,6 +127,9 @@ body {
     margin-left: 3%;
     padding-bottom: 25%;
 }
+ul {
+    list-style-type: none;
+}
 #chef {
     background-color: #D6D7C9;
     padding-top: 5%;
@@ -163,6 +172,7 @@ body {
     padding-right: 30%;
 }
 #map {
+    max-width: 0.5vw;
     margin-top: 10%;
     margin-left: 3%;
 }
