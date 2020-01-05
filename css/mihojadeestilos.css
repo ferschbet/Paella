@@ -77,7 +77,7 @@ body {
     position: relative;
 }
 .display-1 {
-    font-size: 7rem;
+    font-size: 6rem;
     color: #dba646;
     text-align: center;
 }
@@ -116,33 +116,62 @@ body {
     padding-right: 15px;
 }
 #popupSeries {
-    margin-top: 3vh;
-    margin-left: 3.5vw;
-    margin-right: 3.5vw;
-    padding-top: 3vh;
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 #event {
-    padding-top: 20px;
-    min-height: 35rem;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-right: 5vw;
+    min-height: 51.5vh;
+    color: #1C3B4D;
 }
-#event p {
-    font-size: 1rem;
+#lineaEvent {
+    border-bottom: 1px solid white;
+    width: 75px;
 }
-#spEvent {
+ #spEvent {
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 0.85px;
+    color: #1C3B4D;
+    padding-top: 10px;
+    padding-bottom: 45px;
 }
-#tasting {
-    font-size: 3rem;
+#NST {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 25px;
 }
 #fechaEvento {
+    padding-top: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     color: white;
+    padding-bottom: 15px;
+}
+#textoEvento {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.05rem;
+    line-height: normal;
+}
+#tickets {
+    font-size: 2rem;
+    font-weight: 500;
+}
+#lineaTickets {
+    border-bottom: 1px solid white;
+    width: 100px;
 }
 #about {
-    padding-bottom: 7%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #D6D7C9;
 }
 #menu {
