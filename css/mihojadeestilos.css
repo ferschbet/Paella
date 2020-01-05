@@ -170,17 +170,64 @@ body {
     width: 100px;
 }
 #about {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: #D6D7C9;
 }
-#menu {
-    background-color: #1C3B4D;
+#lineaAbout {
+    border-bottom: 1px solid #dba646;
+    width: 62px;
 }
-#lineaMenu {
-    width: 50px;
+#titAbout {
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding-bottom: 60px;
+}
+#northSouth {
+    font-size: 3.37rem;
+    font-weight: 300;
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+#food {
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     color: #dba646;
-    padding-bottom: 1.823vh;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+#textAbout {
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 50px;
+    letter-spacing: 0.5px;
+}
+#cita {
+    font-size: 1.75rem;
+    line-height: normal;
+    color: #1C3B4D;
+    padding-bottom: 15px;
+}
+#magazin {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #1C3B4D;
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+#galeria {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    max-width: 430px;
+}
+#menu {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: #1C3B4D;
 }
 #puzzle {
     padding-top: 10vh;
@@ -209,6 +256,16 @@ body {
     #puzzle {
         max-width: 440px;
     }
+}
+#lineaMenu {
+    border-bottom: 1px solid white;
+    width: 62px;
+    padding-bottom: 1.823vh;
+}
+#titMenu {
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+    color: #dba646;
 }
 .textoMenu {
     padding-top: 1.5vw;
