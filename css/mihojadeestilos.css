@@ -105,6 +105,10 @@ body {
         font-size: 3.5rem;
     }
 }
+.img-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 #tasting {
     padding-top: 40px;
     background-color: #dba646;
@@ -170,8 +174,8 @@ body {
     width: 100px;
 }
 #about {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #D6D7C9;
 }
 #lineaAbout {
@@ -181,7 +185,9 @@ body {
 #titAbout {
     padding-top: 10px;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    color: #1C3B4D;
+    font-weight: 700;
+    letter-spacing: 0.75px;
     padding-bottom: 60px;
 }
 #northSouth {
@@ -221,83 +227,213 @@ body {
 #galeria {
     padding-top: 20px;
     padding-bottom: 0px;
-    padding-left: 20px;
     max-width: 430px;
 }
+@media(max-width: 576px){
+    #galeria {
+       max-width: 270px;
+    }
+}
+@media(max-width: 768px){
+    #galeria {
+       max-width: 350px;
+    }
+}
+@media(max-width: 1200px){
+    #galeria {
+       max-width: 500px;
+     }
+    #about {
+        min-height: 700px;
+    }
+}
+@media(min-width: 1200px){
+    #galeria {
+       max-width: 600px;
+     }
+    #about {
+        min-height: 850px;
+    }
+}
 #menu {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 75px;
     background-color: #1C3B4D;
+    min-height: 2000px;
 }
 #puzzle {
-    padding-top: 10vh;
-    width: 400px;
+    padding-top: 5vh;
+    max-width: 270px;
 }
 @media(max-width: 576px){
     #puzzle {
-        max-width: 440px;
+        width: 270px;
     }
 }
 @media(max-width: 768px){
     #puzzle {
         max-width: 500px;
+        min-height: 2250px;
     }
-}@media(min-width: 768px){
+}
+@media(min-width: 768px){
     #puzzle {
-        max-width: 260px;
+        min-width: 350px;
+        max-width:500px;
     }
 }
 @media(min-width: 992px){
     #puzzle {
-        max-width: 350px;
+        max-width: 270px;
     }
 }
 @media(min-width: 1200px){
     #puzzle {
-        max-width: 440px;
+        max-width: 600px;
+        min-height: 3000px;
     }
 }
-#lineaMenu {
+#lineadispMenu {
     border-bottom: 1px solid white;
-    width: 62px;
-    padding-bottom: 1.823vh;
+    width: 70px;
+    position: absolute;
+    top: 2vh;
 }
-#titMenu {
-    font-family: 'Raleway', sans-serif;
-    padding-top: 10px;
+#displayMenu {
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.75px;
     color: #dba646;
+    padding-top: 10px;
+    position: absolute;
+    top: 1.5vh;
+}
+#foods {
+    padding-top: 40px;
 }
 .textoMenu {
-    padding-top: 1.5vw;
+    font-size: 0.7rem;
     color: white;
 }
+.titmenuLine {
+    border-top: 1px solid #dba646;
+    width: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.titMenu {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.85px;
+    line-height: 0.25;
+    padding-top: 0px;
+}
+.item {
+    padding-top: 12px;
+    line-height: normal;
+}
+#assorted {
+    padding-top: 25px;
+}
 #drinks {
-    padding-top: 9.2vh;
+    position: absolute;
+    top: 6vh;
+}
+.subtitle {
+    padding-top: 20px;
+}
+@media(max-width: 576px){
+    #lineadispMenu {
+        position: absolute;
+        left: 30px;
+    }
+    #displayMenu {
+        position: absolute;
+        top: 1.5vh;
+        left: 30px;
+    }
+    .item {
+        padding-top: 10px;
+    }
+    #foods {
+        padding-top: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #assorted {
+        padding-top: 10px;
+    }
+    #drinks {
+        position: absolute;
+        top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .textoMenu {
+        font-size: 0.6srem;
+    }
+    .titMenu {
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        line-height: 0.05;
+        padding-bottom: 5px;
+    }
+    .titmenuLine {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .subtitle {
+        padding-top: 5px;
+    }
+}
+@media(max-width: 768px){
+    .textoMenu {
+        font-size: 0.85rem;
+    }
+    .titMenu {
+        font-size: 0.85rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1200px){
+    .textoMenu {
+        font-size: 1rem;
+    }
+    .titMenu {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 992px){
+    .titMenu {
+        font-size: 1.25rem;
+    }
+    .textoMenu {
+        font-size: 1.25rem;
+    }
 }
 ul {
     list-style-type: none;
 }
 #chef {
     background-color: #D6D7C9;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left:5%;
-    padding-right: 5%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left:15px;
+    padding-right: 15px;
 }
 #titChef {
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    margin-left: 3%;
-    margin-top: 3%;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 #nomChef {
-    margin-left: 3%;
-    margin-top: 3%;
+    margin-left: 10px;
+    margin-top: 10px;
     font-size: 3.5rem;
 }
 #kindness {
     font-family: 'Raleway', sans-serif;
-    margin-left: 3%;
+    margin-left: 10px;
     color: #dba646;
     font-weight: 600;
 }
@@ -307,16 +443,16 @@ ul {
     font-weight: 600;
 }
 #fotoChef {
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 3%;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     max-width: 90%;
 }
 #contact {
-    padding-top: 10%;
+    padding-top: 10px;
     background: url("../images/web-1.jpg") right / cover no-repeat;
     min-height: 30rem;
-    padding-right: 30%;
+    padding-right: 30px;
 }
 #map {
     padding-top: 10px;
@@ -324,7 +460,7 @@ ul {
 }
 #sketchesofSpain {
     background-color: #dba646;
-    padding-top: 15%;
-    padding-right: 10%;
-    padding-bottom: 15%;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 15px;
 }
