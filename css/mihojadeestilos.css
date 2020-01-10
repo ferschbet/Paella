@@ -1,21 +1,6 @@
 body {
     font-family: 'Zilla Slab', serif;
-/*    background-color: #dba646;*/
 }
-/* large devices
-@media (min-width: 1280px) {
-    .container {
-       max-width: 1280px;
-       padding-left: 0;
-       padding-right: 0;
-     }
-} */
-/* extra large devices 
-  @media screen and (min-width: 1980px) {
-    .container {
-      max-width: 1980px;
-    }
-}*/
 .navbar {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -30,18 +15,9 @@ body {
     background-color: #030A10 !important;
 }
 .navbar-brand {
-/*    left:0;*/
-/*    -ms-transform:translate(0);
-    transform:translate(0);*/
     opacity:1;
 }
 .scrolled .navbar-brand {
-/*    position:relative;
-    left:-100em;
-    transition:all 1000ms ease 250ms;*/
-/*    -ms-transform:translate(-100em);
-    transform:translate(-100em);
-    transition:all 1000ms ease 250ms;*/
     position:relative;
     transition:opacity 500ms ease 100ms;
     opacity:0; 
@@ -458,9 +434,91 @@ ul {
     padding-top: 10px;
     padding-left: 10px;
 }
+#textContact {
+    color: white;
+}
 #sketchesofSpain {
     background-color: #dba646;
-    padding-top: 30px;
-    padding-right: 20px;
-    padding-bottom: 15px;
+    color: #1C3B4D;
+    padding-top: 20px;
+    min-height: 510px;
+}
+#minilogo {
+    float: left;
+    padding-left: 20px;
+    padding-top: 5px;
+    max-width: 100px;
+}
+#textSketches {
+    padding-left: 120px;
+    padding-top: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 26.25px;
+    letter-spacing: 4px;
+}
+#social {
+    font-size: 40px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.fa_custom {  
+    color: #1C3B4D; 
+    }  
+#Subscribe {
+    font-size: 16.5px;
+    letter-spacing: 0.5px;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+#signup {
+    font-size: 10px;
+    letter-spacing: normal;
+    padding-top: 12px;
+}
+#form {
+    padding-left: 120px;
+    padding-top: 10px;
+}
+#inputEmail {
+    float: left;
+    font-size: 11px;
+    font-style: italic;
+    vertical-align: center;
+}
+#btnSignup {
+    background-color: #1C3B4D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 9px;
+    min-width: 100px;
+    height: 30px;
+    vertical-align: center;
+}
+#privacy {
+    font-size: 10px;
+    padding-top: 15px;
+    padding-left: 120px;
+    padding-bottom: 82px;
+}
+.nav {
+    padding-left: 103px;
+}
+#navBottom {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1C3B4D;
+    letter-spacing: 0.25px;
+    padding-right: 0px;
+}
+#copyright {
+    padding-left: 118px;
+    padding-top: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+#cuadrados {
+    padding-right: 10px;
+    padding-top: 10px;
 }
