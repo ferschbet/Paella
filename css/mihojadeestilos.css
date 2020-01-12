@@ -1,12 +1,16 @@
 body {
     font-family: 'Zilla Slab', serif;
 }
+ul {
+    list-style-type: none;
+}
 .navbar {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     background-color: black;
     min-height: 115px;
-    max-height: 120px;
+    max-height: 400px;
+
 }
 .bg-dark {
     background-color: transparent !important;
@@ -32,6 +36,13 @@ body {
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
+@media screen and (max-width: 415px){
+    .navbar-toggler {
+        position: absolute;
+        top: 3.24vh;
+        left: 80vw;
+    }
+}
 @media screen and (max-width: 768px) {
     .logo {
         height: 85px;
@@ -40,8 +51,6 @@ body {
         top: 1.5vh;
         left: 18vw;
     }
-}
-@media(max-width: 768px){
     .nav-link:hover {
         border-bottom: none;
     }
@@ -70,13 +79,18 @@ body {
     margin-top: 20px;
 }
 #cityAddress {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.75em;
     font-weight: 600;
     letter-spacing: 0.85px;
     color: white;
 }
-@media (max-width: 768px){
+@media screen and (max-width: 350px){
+    .display-1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 768px){
     .display-1 {
         font-size: 3.5rem;
     }
@@ -96,15 +110,15 @@ body {
     padding-right: 15px;
 }
 #popupSeries {
-    padding-top: 8vh;
-    padding-bottom: 3vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-top: 75px;
+    padding-bottom: 28px;
+    padding-left: 12px;
+    padding-right: 0px;
 }
 #event {
     padding-left: 0px;
     padding-top: 10px;
-    padding-right: 5vw;
+    padding-right: 15px;
     min-height: 51.5vh;
     color: #1C3B4D;
 }
@@ -112,17 +126,17 @@ body {
     border-bottom: 1px solid white;
     width: 75px;
 }
- #spEvent {
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.85px;
+#spEvent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     color: #1C3B4D;
+ /* padding-left: 32px;*/
     padding-top: 10px;
     padding-bottom: 45px;
 }
 #NST {
-    font-size: 3.5rem;
+    font-size: 56px;
     font-weight: 300;
     color: #1C3B4D;
     line-height: normal;
@@ -130,28 +144,170 @@ body {
 }
 #fechaEvento {
     padding-top: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: white;
     padding-bottom: 15px;
 }
 #textoEvento {
     padding-top: 10px;
-    padding-bottom: 30px;
-    font-size: 1.05rem;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    font-size: 16.8px;
     line-height: normal;
 }
 #tickets {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
 }
 #lineaTickets {
     border-bottom: 1px solid white;
     width: 100px;
 }
+@media screen and (max-width: 350px){
+    #spEvent {
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 576px){
+    #tasting {
+        padding-bottom: 25px; 
+    }
+    #popupSeries {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #spEvent {
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #NST {
+        font-size: 50px;
+    }
+    #fechaEvento {
+        font-size: 14px;
+    }
+    #textoEvento {
+        font-size: 14px;
+    }
+    #tickets {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    #NST {
+        font-size: 3.5rem;
+    }
+    #spEvent {
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #fechaEvento {
+        font-size: 14px;
+    }
+    #textoEvento {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #NST {
+        font-size: 56px;
+    }
+    #spEvent {
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #fechaEvento {
+        font-size: 24px;
+        padding-right: 10px;
+    }
+    #textoEvento {
+        font-size: 24px;
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width: 1000px){
+    #spEvent {
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+    #NST {
+        font-size: 68px;
+    }
+    #fechaEvento {
+        font-size: 24px;
+    }
+    #textoEvento {
+        font-size: 24px;
+    }
+    #tickets {
+         font-size: 50px;
+    }
+    #lineaTickets {
+        border-bottom: 1px solid white;
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1500px){
+    #tasting {
+        padding-top: 80px;
+        height: 1200px;
+    }
+    #popupSeries {
+        padding-top: 120px;
+        padding-bottom: 70px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    #lineaEvent {
+        border-bottom: 2px solid white;
+        width: 150px;
+    }
+    #spEvent {
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+    #NST {
+        font-size: 100px;
+        padding-bottom: 80px;
+    }
+    #fechaEvento {
+        font-size: 36px;
+    }
+    #textoEvento {
+        font-size: 36px;
+    }
+    #tickets {
+         font-size: 60px;
+    }
+    #lineaTickets {
+        border-bottom: 1px solid white;
+        width: 180px;
+    }
+}
+@media screen and (min-width: 1800px){
+    #tasting {
+        padding-top: 80px;
+        height: 1200px;
+    }
+    #spEvent {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding-bottom: 100px;
+    }
+}
 #about {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     background-color: #D6D7C9;
 }
 #lineaAbout {
@@ -160,7 +316,7 @@ body {
 }
 #titAbout {
     padding-top: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #1C3B4D;
     font-weight: 700;
     letter-spacing: 0.75px;
@@ -175,7 +331,7 @@ body {
 }
 #food {
     padding-top: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     color: #dba646;
     line-height: normal;
@@ -194,7 +350,7 @@ body {
     padding-bottom: 15px;
 }
 #magazin {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #1C3B4D;
     text-align: right;
@@ -205,17 +361,17 @@ body {
     padding-bottom: 0px;
     max-width: 430px;
 }
-@media(max-width: 576px){
+@media screen and (max-width: 576px){
     #galeria {
        max-width: 270px;
     }
 }
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     #galeria {
        max-width: 350px;
     }
 }
-@media(max-width: 1200px){
+@media screen and (max-width: 1200px){
     #galeria {
        max-width: 500px;
      }
@@ -223,7 +379,7 @@ body {
         min-height: 700px;
     }
 }
-@media(min-width: 1200px){
+@media screen and (min-width: 1200px){
     #galeria {
        max-width: 600px;
      }
@@ -386,9 +542,6 @@ body {
         font-size: 1.25rem;
     }
 }
-ul {
-    list-style-type: none;
-}
 #chef {
     background-color: #D6D7C9;
     padding-top: 30px;
@@ -400,7 +553,7 @@ ul {
     width: 68px;
 }
 #titChef {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #1C3B4D;
     font-size: 16px;
     font-weight: 600;
@@ -416,7 +569,7 @@ ul {
 }
 #kindness {
     padding-top: 30px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #dba646;
     font-weight: 600;
@@ -450,7 +603,7 @@ ul {
 }
 #titContact {
     padding-top: 10px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 16px;
     font-weight: 600;
@@ -486,7 +639,7 @@ ul {
 #textSketches {
     padding-left: 120px;
     padding-top: 25px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-size: 26.25px;
     letter-spacing: 4px;
@@ -523,7 +676,7 @@ ul {
 }
 #btnSignup {
     background-color: #1C3B4D;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 9px;
     min-width: 100px;
     height: 30px;
@@ -539,7 +692,7 @@ ul {
     padding-left: 103px;
 }
 #navBottom {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 600;
     color: #1C3B4D;
