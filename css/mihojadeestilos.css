@@ -233,6 +233,9 @@ ul {
     }
 }
 @media screen and (min-width: 1000px){
+    #tasting {
+        height: 850px; 
+    }
     #spEvent {
         font-size: 24px;
         font-weight: 600;
@@ -242,10 +245,10 @@ ul {
         font-size: 68px;
     }
     #fechaEvento {
-        font-size: 24px;
+        font-size: 28px;
     }
     #textoEvento {
-        font-size: 24px;
+        font-size: 28px;
     }
     #tickets {
          font-size: 50px;
@@ -258,7 +261,7 @@ ul {
 @media screen and (min-width: 1500px){
     #tasting {
         padding-top: 80px;
-        height: 1200px;
+        height: 1100px;
     }
     #popupSeries {
         padding-top: 120px;
@@ -296,7 +299,7 @@ ul {
 @media screen and (min-width: 1800px){
     #tasting {
         padding-top: 80px;
-        height: 1200px;
+        height: 1050px;
     }
     #spEvent {
         font-size: 36px;
