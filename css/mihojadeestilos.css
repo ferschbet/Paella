@@ -167,12 +167,18 @@ ul {
 }
 @media screen and (max-width: 350px){
     #spEvent {
-        padding-left: 10px;
+        padding-left: 12px;
+    }
+    #fechaEvento {
+        font-size: 12px;
+    }
+    #textoEvento {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 576px){
     #tasting {
-        padding-bottom: 25px; 
+        height: 850px;
     }
     #popupSeries {
         padding-top: 5px;
@@ -189,18 +195,21 @@ ul {
         font-size: 50px;
     }
     #fechaEvento {
-        font-size: 14px;
+        font-size: 12px;
     }
     #textoEvento {
-        font-size: 14px;
+        font-size: 12px;
     }
     #tickets {
         font-size: 30px;
     }
 }
 @media screen and (max-width: 768px){
+    #tasting {
+        height: 1050px; 
+    }
     #NST {
-        font-size: 3.5rem;
+        font-size: 56px;
     }
     #spEvent {
         font-size: 12px;
@@ -313,6 +322,9 @@ ul {
     padding-bottom: 15px;
     background-color: #D6D7C9;
 }
+#textAbout {
+    padding-right: 10px;
+}
 #lineaAbout {
     border-bottom: 1px solid #dba646;
     width: 68px;
@@ -326,7 +338,7 @@ ul {
     padding-bottom: 60px;
 }
 #northSouth {
-    font-size: 3.37rem;
+    font-size: 54px;
     font-weight: 300;
     color: #1C3B4D;
     line-height: normal;
@@ -335,21 +347,24 @@ ul {
 #food {
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
     font-weight: 600;
     color: #dba646;
     line-height: normal;
     padding-bottom: 20px;
 }
-#textAbout {
+#parAbout {
+    font-size: 24px;
     color: #1C3B4D;
     line-height: normal;
     padding-bottom: 50px;
     letter-spacing: 0.5px;
 }
 #cita {
-    font-size: 1.75rem;
+    font-size: 28px;
     line-height: normal;
     color: #1C3B4D;
+    padding-right: 25px;
     padding-bottom: 15px;
 }
 #magazin {
@@ -357,16 +372,34 @@ ul {
     font-weight: 700;
     color: #1C3B4D;
     text-align: right;
-    letter-spacing: 0.5px;
+    padding-right: 50px;
 }
 #galeria {
     padding-top: 20px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     max-width: 430px;
 }
 @media screen and (max-width: 576px){
+    #titAbout {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    #northSouth {
+        font-size: 44px;
+    }
+    #food {
+        font-size: 16px;
+    }
+    #parAbout {
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+    #cita {
+        font-size: 24px;
+    }
     #galeria {
        max-width: 270px;
+       padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 768px){
@@ -375,54 +408,88 @@ ul {
     }
 }
 @media screen and (max-width: 1200px){
-    #galeria {
-       max-width: 500px;
-     }
     #about {
         min-height: 700px;
     }
+    #galeria {
+       max-width: 500px;
+    }
 }
 @media screen and (min-width: 1200px){
-    #galeria {
-       max-width: 600px;
-     }
     #about {
         min-height: 850px;
     }
+    #titAbout {
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+    #northSouth {
+        font-size: 65px;
+    }
+    #food {
+        font-size: 30px;
+    }
+    #parAbout {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    #cita {
+        font-size: 36px;
+    }
+    #magazin {
+        font-size: 24px;
+    }
+    #galeria {
+       max-width: 600px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #galeria {
+        max-width: 700px;
+      }
+     #about {
+         min-height: 1000px;
+     }
 }
 #menu {
+    padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 75px;
     background-color: #1C3B4D;
-    min-height: 2000px;
+    min-height: 2100px;
 }
 #puzzle {
     padding-top: 5vh;
-    max-width: 270px;
+    min-width: 250px;
 }
-@media(max-width: 576px){
+@media screen and (max-width: 420px){
     #puzzle {
         width: 270px;
     }
 }
-@media(max-width: 768px){
+@media screen and (max-width: 576px){
+    #puzzle {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 768px){
     #puzzle {
         max-width: 500px;
         min-height: 2250px;
     }
 }
-@media(min-width: 768px){
+@media screen and (min-width: 768px){
     #puzzle {
         min-width: 350px;
         max-width:500px;
     }
 }
-@media(min-width: 992px){
+@media screen and (min-width: 992px){
     #puzzle {
         max-width: 270px;
     }
 }
-@media(min-width: 1200px){
+@media screen and (min-width: 1200px){
     #puzzle {
         max-width: 600px;
         min-height: 3000px;
@@ -436,7 +503,7 @@ ul {
 }
 #displayMenu {
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 20px;
     letter-spacing: 0.75px;
     color: #dba646;
     padding-top: 10px;
@@ -475,9 +542,12 @@ ul {
     top: 6vh;
 }
 .subtitle {
-    padding-top: 20px;
+    padding-top: 10px;
 }
-@media(max-width: 576px){
+@media screen and (max-width: 576px){
+    #menu {
+        padding-right: 15px;
+    }
     #lineadispMenu {
         position: absolute;
         left: 30px;
@@ -488,24 +558,24 @@ ul {
         left: 30px;
     }
     .item {
-        padding-top: 10px;
+        padding-top: 5px;
     }
     #foods {
         padding-top: 35px;
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 0px;
     }
     #assorted {
         padding-top: 10px;
     }
     #drinks {
         position: absolute;
-        top: 50px;
-        padding-left: 15px;
+        top: 25px;
+        padding-left: 0px;
         padding-right: 15px;
     }
     .textoMenu {
-        font-size: 0.6srem;
+        font-size: 0.6rem;
     }
     .titMenu {
         font-family: sans-serif;
@@ -518,31 +588,48 @@ ul {
         padding-bottom: 0px;
     }
     .subtitle {
-        padding-top: 5px;
+        padding-top: 2.5px;
     }
 }
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
+    #menu {
+        padding-right: 10px;
+        min-height: 2500px;
+    }
     .textoMenu {
         font-size: 0.85rem;
+        line-height: 0.99;
     }
     .titMenu {
         font-size: 0.85rem;
+        line-height: 0.99;
+        padding-bottom: 5px;
     }
 }
-@media (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px){
+    #menu {
+        padding-right: 25px;
+        min-height: 1500px;
+    }
     .textoMenu {
-        font-size: 1rem;
+        font-size: 16px;
     }
     .titMenu {
-        font-size: 1rem;
+        font-size: 16px;
     }
 }
-@media (min-width: 992px){
+@media screen and (min-width: 992px){
+    #menu {
+        min-height: 2500px;
+    }
+    #displayMenu {
+        font-size: 24px;
+    }
     .titMenu {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
     .textoMenu {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 }
 #chef {
