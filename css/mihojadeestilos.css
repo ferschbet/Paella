@@ -325,7 +325,7 @@ ul {
 #textAbout {
     padding-right: 10px;
 }
-#lineaAbout {
+.lineaAbout {
     border-bottom: 1px solid #dba646;
     width: 68px;
 }
@@ -620,7 +620,7 @@ ul {
 }
 @media screen and (min-width: 992px){
     #menu {
-        min-height: 2500px;
+        min-height: 2100px;
     }
     #displayMenu {
         font-size: 24px;
@@ -645,7 +645,7 @@ ul {
 #titChef {
     font-family: 'Open Sans', sans-serif;
     color: #1C3B4D;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     letter-spacing: 1px;
     padding-top: 10px;
@@ -660,13 +660,13 @@ ul {
 #kindness {
     padding-top: 30px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     color: #dba646;
     font-weight: 600;
 }
-#descripcion {
+#textChef {
     color: #1C3B4D;
-    font-size: 16px;
+    font-size: 24px;
     letter-spacing: 0.5px;
     padding-top: 20px;
 }
@@ -674,11 +674,55 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
 }
+@media screen and (max-width: 576px) {
+    #titChef {
+        font-size: 16px;
+    }
+    #nomChef {
+        font-size: 36px;
+    }
+    #kindness {
+        font-size: 16px;
+    }
+    #textChef {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #titChef {
+        font-size: 24px;
+    }
+    #nomChef {
+        font-size: 54px;
+    }
+    #kindness {
+        font-size: 24px;
+    }
+    #textChef {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #titChef {
+        font-size: 36px;
+    }
+    #nomChef {
+        font-size: 81px;
+    }
+    #kindness {
+        font-size: 36px;
+    }
+    #textChef {
+        font-size: 36px;
+    }
+}
 #contact {
     background: url("../images/web-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 650px;
 }
 #map {
     padding-left: 60px;
@@ -687,38 +731,164 @@ ul {
 #ubicacion {
     width: 380px;
 }
-#lineatitContact {
+.lineatitContact .lineaAbout {
     padding-top: 50px;
     color: #dba646;
+    width: 98px;
 }
 #titContact {
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 .textContact {
     padding-top: 15px;
-    font-size: 10px;
+    font-size: 14px;
     color: white;
     line-height: normal;
     padding-left: 0px;
     padding-right: 0px;
 }
 #talktoUs {
-    padding-top: 15px;
-    font-size: 10px;
-    color: white;
-    line-height: normal;
     padding-bottom: 100px;
+}
+@media screen and (max-width: 576px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #map {
+        padding-left: 30px;
+        padding-top: 45px;
+    }
+    #ubicacion {
+        width: 380px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #ubicacion {
+        width: 600px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 800px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #ubicacion {
+        width: 380px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #contact {
+        min-height: 700px;
+    }
+    #ubicacion {
+        width: 460px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 110px;
+    }
+    #titContact {
+        font-size: 22px;
+    }
+    .textContact {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #contact {
+        min-height: 800px;
+    }
+    #ubicacion {
+        width: 560px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 112px;
+    }
+    #titContact {
+        font-size: 24px;
+    }
+    .textContact {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #contact {
+        min-height: 900px;
+    }
+    #ubicacion {
+        width: 680px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 124px;
+    }
+    #titContact {
+        font-size: 26px;
+    }
+    .textContact {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #ubicacion {
+        width: 760px;
+    }
+    .lineatitContact .lineaAbout {
+        width: 136px;
+    }
+    #titContact {
+        font-size: 28px;
+    }
+    .textContact {
+        font-size: 22px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #ubicacion {
+        width: 850px;
+    }
 }
 #sketchesofSpain {
     background-color: #dba646;
     color: #1C3B4D;
     padding-top: 20px;
     min-height: 510px;
+    padding-bottom: 50px;
 }
 #minilogo {
     float: left;
@@ -743,14 +913,14 @@ ul {
 .fa_custom {  
     color: #1C3B4D; 
     }  
-#Subscribe {
-    font-size: 16.5px;
+#subscribe {
+    font-size: 24px;
     letter-spacing: 0.5px;
     padding-left: 120px;
     padding-top: 10px;
 }
 #signup {
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: normal;
     padding-top: 12px;
 }
@@ -760,20 +930,20 @@ ul {
 }
 #inputEmail {
     float: left;
-    font-size: 11px;
+    font-size: 14px;
     font-style: italic;
     vertical-align: center;
 }
 #btnSignup {
     background-color: #1C3B4D;
     font-family: 'Open Sans', sans-serif;
-    font-size: 9px;
+    font-size: 10px;
     min-width: 100px;
-    height: 30px;
+    height: 35px;
     vertical-align: center;
 }
 #privacy {
-    font-size: 10px;
+    font-size: 14px;
     padding-top: 15px;
     padding-left: 120px;
     padding-bottom: 82px;
@@ -792,10 +962,218 @@ ul {
 #copyright {
     padding-left: 118px;
     padding-top: 10px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
 }
 #cuadrados {
-    padding-right: 10px;
     padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 90px;
+    }
+    #textSketches {
+        padding-left: 100px;
+        padding-top: 25px;
+    }
+    #subscribe {
+        padding-left: 0px !important;
+    }
+    #signup {
+        padding-left: 0px !important;
+    }
+    #form {
+        padding-left: 0px !important;
+    }
+    #btnSignup {
+        min-width: 80px;
+    }
+    #privacy {
+        padding-left: 0px !important;
+        padding-bottom: 30px;
+    }
+   .nav {
+        padding-left: 0px;
+    }
+    #navBottom {
+        font-size: 10px;
+    }
+    #copyright {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #subscribe {
+        padding-left: 120px;
+    }
+    #signup {
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    #form {
+        padding-left: 120px;
+    }
+    #btnSignup {
+        min-width: 120px;
+    }
+    #privacy {
+        padding-left: 80px;
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    #navBottom {
+        font-size: 20px;
+    }
+    #copyright {
+        padding-left: 5px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 800px) {
+    #subscribe {
+        padding-left: 120px;
+        font-size: 25px;
+    }
+    #signup {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+    #form {
+        padding-left: 120px;
+    }
+    #btnSignup {
+        min-width: 100px;
+    }
+    #privacy {
+        padding-left: 80px;
+        padding-bottom: 50px;
+        font-size: 15px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 80px;
+    }
+    #navBottom {
+        font-size: 11px;
+    }
+    #copyright {
+        padding-left: 90px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px) {
+    #subscribe {
+        padding-left: 120px;
+        font-size: 26px;
+    }
+    #signup {
+        padding-left: 0px;
+        font-size: 16px;
+    }
+    #form {
+        padding-left: 120px;
+    }
+    #btnSignup {
+        min-width: 120px;
+    }
+    #privacy {
+        padding-left: 80px;
+        padding-bottom: 50px;
+        font-size: 16px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 80px;
+    }
+    #navBottom {
+        font-size: 14px;
+    }
+    #copyright {
+        padding-left: 90px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #minilogo {
+        padding-left: 30px;
+        max-width: 120px;
+    }
+    #textSketches {
+        padding-left: 140px;
+        padding-top: 25px;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    #subscribe {
+        padding-left: 140px;
+        font-size: 28px;
+    }
+    #signup {
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    #form {
+        padding-left: 140px;
+    }
+    #btnSignup {
+        min-width: 140px;
+    }
+    #privacy {
+        padding-left: 100px;
+        padding-bottom: 65px;
+        font-size: 18px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 100px;
+    }
+    #navBottom {
+        font-size: 16px;
+    }
+    #copyright {
+        padding-left: 100px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #subscribe {
+        padding-left: 140px;
+        font-size: 30px;
+    }
+    #signup {
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    #form {
+        padding-left: 140px;
+    }
+    #btnSignup {
+        min-width: 180px;
+    }
+    #privacy {
+        padding-left: 100px;
+        padding-bottom: 140px;
+        font-size: 20px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 100px;
+    }
+    #navBottom {
+        font-size: 18px;
+    }
+    #copyright {
+        padding-left: 100px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #privacy {
+        padding-bottom: 200px;
 }
