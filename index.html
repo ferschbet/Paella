@@ -21,7 +21,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <a href="#" class="navbar-brand">
-          <img src="images/logo.png" class="logo" alt="Responsive image">
+          <img src="images/logo.png" class="logo justify-content-start align-items-start" alt="">
         </a>
         <button
           class="navbar-toggler"
@@ -62,8 +62,8 @@
       <div class="header container text-light text-center">
         <h1 class="display-1 justify-content-center">North Spanish Bites</h1>
         <div class="container justify-content-center" id="linea"></div>
-        <div class="container justify-content-center" id="address">321, Zang Blvd.</div>
-        <div class="container justify-content-center" id="cityAddress">OAK CLIFF, DALLAS, TX</div>
+        <p id="address">321, Zang Blvd.</p>
+        <p id="cityAddress">OAK CLIFF, DALLAS, TX</p>
         </div>
      </section>
       <section class="main">
@@ -394,15 +394,16 @@
       $(window).scroll(function(){
         $('nav').toggleClass('scrolled', $(this).scrollTop() >= 550);
       });
-      //Ocultación del logo al hacer scroll hacia abajo
+      //Cambio de tamaño del logo al hacer scroll hacia abajo
       $(window).scroll(function(){
-          var $this = $(this);
-          if ($this.scrollTop() >= 950) {
-              $(".navbar-brand").addClass("scrolled");
+        var $this = $(this);
+          if ($this.scrollTop() >= 550) {
+              $(".logo").addClass("shrink");
           } else {
-              $(".navbar-brand").removeClass("scrolled");
+              $(".logo").removeClass("shrink");
           };
       });
+  
      </script>
   </body>
 </html>

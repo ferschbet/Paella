@@ -22,16 +22,25 @@ ul {
     opacity:1;
 }
 .scrolled .navbar-brand {
-    position:relative;
-    transition:opacity 500ms ease 100ms;
-    opacity:0; 
+    position: absolute;
+    top: 1.5vh;
+    left: 0.75vw;
+    height: 85px;
+    width: 85px; 
 }
 .logo {
     position: absolute;
     top: 3.24vh;
-    left: 2.604vw;
+    left: 0.75vw;
     height: 170px;
     width: 170px;
+ }
+ .shrink {
+    width:75px;
+    height:75px;
+    position: absolute;
+    top: 3.24vh;
+    left: 0.75vw;
  }
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
@@ -42,14 +51,26 @@ ul {
         top: 3.24vh;
         left: 80vw;
     }
+    .logo {
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: 1.5vh;
+        left: 0.05vw !important;
+    }
 }
 @media screen and (max-width: 768px) {
     .logo {
-        height: 85px;
-        width: 85px;
+        height: 75px;
+        width: 75px;
         position: absolute;
         top: 1.5vh;
-        left: 18vw;
+        left: 0.75vw !important;
+    }
+    .navbar-toggler {
+        position: absolute;
+        top: 3.24vh;
+        left: 80vw;
     }
     .nav-link:hover {
         border-bottom: none;
