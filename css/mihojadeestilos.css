@@ -10,7 +10,9 @@ ul {
     background-color: black;
     min-height: 115px;
     max-height: 400px;
-
+}
+.nav-item {
+    text-align: left;
 }
 .bg-dark {
     background-color: transparent !important;
@@ -18,38 +20,42 @@ ul {
 .bg-dark.scrolled {
     background-color: #030A10 !important;
 }
-.navbar-brand {
-    opacity:1;
+.navbar-nav {
+    padding-top: 50px;
 }
 .scrolled .navbar-brand {
     position: absolute;
-    top: 1.5vh;
+    top: 0.85vh;
     left: 0.75vw;
-    height: 85px;
-    width: 85px; 
+    height: 65px;
+    width: 65px; 
 }
 .logo {
     position: absolute;
     top: 3.24vh;
     left: 0.75vw;
-    height: 170px;
-    width: 170px;
- }
- .shrink {
-    width:75px;
-    height:75px;
+    height: 150px;
+    width: 150px;
+}
+.shrink {
+    width:65px;
+    height:65px;
     position: absolute;
-    top: 3.24vh;
+    top: 0.85vh;
     left: 0.75vw;
- }
+}
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
 @media screen and (max-width: 415px){
     .navbar-toggler {
-        position: absolute;
-        top: 3.24vh;
-        left: 80vw;
+       position: absolute;
+       top: 3.24vh;
+       left: 70vw;
+    }
+    .navbar-nav {
+        padding-top: 50px;
+        font-size: 12px;
     }
     .logo {
         height: 75px;
@@ -60,11 +66,20 @@ ul {
     }
 }
 @media screen and (max-width: 768px) {
+  /*.navbar {
+        background-color: black;
+        min-height: 115px;
+        max-height: 400px;
+    }*/
+    .navbar-nav {
+        padding-top: 65px;
+        font-size: 12px;
+    }
     .logo {
-        height: 75px;
-        width: 75px;
+        height: 65px;
+        width: 65px;
         position: absolute;
-        top: 1.5vh;
+        top: 0.85vh;
         left: 0.75vw !important;
     }
     .navbar-toggler {
@@ -81,9 +96,10 @@ ul {
     height: 100vh;
     opacity: 1;
     position: relative;
+    text-align: center;
 }
 .display-1 {
-    font-size: 6rem;
+    font-size: 96px;
     color: #dba646;
     text-align: center;
 }
@@ -106,14 +122,36 @@ ul {
     letter-spacing: 0.85px;
     color: white;
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: 576px){
     .display-1 {
-        font-size: 2rem;
+        font-size: 46px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #linea {
+        margin-top: 1.823vh;
+        width:12.5vw;
+        border-bottom: solid white 2px;
+    }
+    #address {
+        font-size: 26px;
+    }
+    #cityAddress {
+        font-size: 10px;
     }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 845px){
     .display-1 {
-        font-size: 3.5rem;
+        font-size: 46px;
+    }
+    #linea {
+        margin-top: 1.823vh;
+        width:10vw;
+        border-bottom: solid white 2px;
+    }
+    #address {
+        font-size: 26px;
     }
 }
 .img-fluid {
@@ -186,17 +224,6 @@ ul {
     border-bottom: 1px solid white;
     width: 100px;
 }
-@media screen and (max-width: 350px){
-    #spEvent {
-        padding-left: 12px;
-    }
-    #fechaEvento {
-        font-size: 12px;
-    }
-    #textoEvento {
-        font-size: 12px;
-    }
-}
 @media screen and (max-width: 576px){
     #tasting {
         height: 850px;
@@ -238,10 +265,10 @@ ul {
         padding-bottom: 25px;
     }
     #fechaEvento {
-        font-size: 14px;
+        font-size: 12px;
     }
     #textoEvento {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 1000px){
