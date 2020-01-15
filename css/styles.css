@@ -442,9 +442,6 @@ ul {
     #about {
         min-height: 700px;
     }
-    #galeria {
-       max-width: 500px;
-    }
 }
 @media screen and (min-width: 1200px){
     #about {
@@ -1017,9 +1014,6 @@ ul {
     }
     #form {
         padding-left: 30px;
-    }
-    #btnSignup {
-        min-width: 120px;
     }
     #privacy {
         padding-left: 30px;
