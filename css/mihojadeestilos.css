@@ -66,11 +66,6 @@ ul {
     }
 }
 @media screen and (max-width: 768px) {
-  /*.navbar {
-        background-color: black;
-        min-height: 115px;
-        max-height: 400px;
-    }*/
     .navbar-nav {
         padding-top: 65px;
         font-size: 12px;
@@ -91,7 +86,7 @@ ul {
         border-bottom: none;
     }
 }
-#hero {
+.hero {
     background: url("../images/web-0.jpg") center / cover no-repeat;
     height: 100vh;
     opacity: 1;
@@ -103,19 +98,19 @@ ul {
     color: #dba646;
     text-align: center;
 }
-#linea {
+.linea {
     margin-top: 1.823vh;
     width:12.5vw;
     border-bottom: solid white 2px;
 }
-#address {
+.address {
     font-size: 2em;
     font-weight: 300;
     letter-spacing: 0.5px;
     color: white;
     margin-top: 20px;
 }
-#cityAddress {
+.cityAddress {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.75em;
     font-weight: 600;
@@ -129,15 +124,15 @@ ul {
         padding-left: 50px;
         padding-right: 50px;
     }
-    #linea {
+    .linea {
         margin-top: 1.823vh;
         width:12.5vw;
         border-bottom: solid white 2px;
     }
-    #address {
+    .address {
         font-size: 26px;
     }
-    #cityAddress {
+    .cityAddress {
         font-size: 10px;
     }
 }
@@ -145,12 +140,12 @@ ul {
     .display-1 {
         font-size: 46px;
     }
-    #linea {
+    .linea {
         margin-top: 1.823vh;
         width:10vw;
         border-bottom: solid white 2px;
     }
-    #address {
+    .address {
         font-size: 26px;
     }
 }
@@ -158,9 +153,9 @@ ul {
     padding-left: 0px;
     padding-right: 0px;
 }
-#tasting {
+.tasting {
     padding-top: 40px;
-    background-color: #dba646;
+    background-color: #dba646 !important;
     min-height: 220px;
     padding-bottom: 50px;
 }
@@ -168,24 +163,24 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
 }
-#popupSeries {
+.popupSeries {
     padding-top: 75px;
     padding-bottom: 28px;
     padding-left: 12px;
     padding-right: 0px;
 }
-#event {
+.event {
     padding-left: 0px;
     padding-top: 10px;
     padding-right: 15px;
     min-height: 51.5vh;
     color: #1C3B4D;
 }
-#lineaEvent {
+.lineaEvent {
     border-bottom: 1px solid white;
     width: 75px;
 }
-#spEvent {
+.spEvent {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -194,14 +189,14 @@ ul {
     padding-top: 10px;
     padding-bottom: 45px;
 }
-#NST {
+.NST {
     font-size: 56px;
     font-weight: 300;
     color: #1C3B4D;
     line-height: normal;
     padding-bottom: 25px;
 }
-#fechaEvento {
+.fechaEvento {
     padding-top: 10px;
     padding-right: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -209,190 +204,137 @@ ul {
     color: white;
     padding-bottom: 15px;
 }
-#textoEvento {
+.textoEvento {
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 30px;
     font-size: 16.8px;
     line-height: normal;
 }
-#tickets {
+.tickets {
     font-size: 32px;
     font-weight: 500;
 }
-#lineaTickets {
+.lineaTickets {
     border-bottom: 1px solid white;
     width: 100px;
 }
-@media screen and (max-width: 576px){
-    #tasting {
-        height: 850px;
+@media screen and (min-width: 450px){
+    .tasting {
+        height: 740px;
     }
-    #popupSeries {
+    .popupSeries {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 5px;
         padding-right: 5px;
     }
-    #spEvent {
-        font-size: 12px;
+    .spEvent {
+        font-size: 14px;
         font-weight: 600;
         padding-bottom: 25px;
     }
-    #NST {
-        font-size: 50px;
+    .NST {
+        font-size: 45px;
     }
-    #fechaEvento {
-        font-size: 12px;
+    .fechaEvento {
+        font-size: 16px;
     }
-    #textoEvento {
-        font-size: 12px;
+    .textoEvento {
+        font-size: 16px;
     }
-    #tickets {
+    .tickets {
         font-size: 30px;
     }
 }
-@media screen and (max-width: 768px){
-    #tasting {
-        height: 1050px; 
+@media screen and (min-width: 576px){
+    .tasting {
+        height: 850px;
     }
-    #NST {
-        font-size: 56px;
+    .popupSeries {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
-    #spEvent {
-        font-size: 12px;
-        font-weight: 600;
-        padding-bottom: 25px;
-    }
-    #fechaEvento {
-        font-size: 12px;
-    }
-    #textoEvento {
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 1000px){
-    #NST {
-        font-size: 56px;
-    }
-    #spEvent {
+    .spEvent {
         font-size: 16px;
         font-weight: 600;
         padding-bottom: 25px;
     }
-    #fechaEvento {
-        font-size: 24px;
-        padding-right: 10px;
+    .NST {
+        font-size: 55px;
     }
-    #textoEvento {
-        font-size: 24px;
-        padding-right: 20px;
+    .fechaEvento {
+        font-size: 16px;
+    }
+    .textoEvento {
+        font-size: 16px;
+    }
+    .tickets {
+        font-size: 30px;
     }
 }
-@media screen and (min-width: 1000px){
-    #tasting {
+@media screen and (min-width: 768px){
+    .tasting {
         height: 850px; 
     }
-    #spEvent {
+    .spEvent {
         font-size: 24px;
         font-weight: 600;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
-    #NST {
-        font-size: 68px;
+    .NST {
+        font-size: 60px;
     }
-    #fechaEvento {
-        font-size: 28px;
+    .fechaEvento {
+        font-size: 24px;
     }
-    #textoEvento {
-        font-size: 28px;
+    .textoEvento {
+        font-size: 24px;
     }
-    #tickets {
+    .tickets {
          font-size: 50px;
     }
-    #lineaTickets {
+    .lineaTickets {
         border-bottom: 1px solid white;
         width: 150px;
     }
 }
-@media screen and (min-width: 1500px){
-    #tasting {
-        padding-top: 80px;
-        height: 1100px;
-    }
-    #popupSeries {
-        padding-top: 120px;
-        padding-bottom: 70px;
-        padding-left: 48px;
-        padding-right: 48px;
-    }
-    #lineaEvent {
-        border-bottom: 2px solid white;
-        width: 150px;
-    }
-    #spEvent {
-        font-size: 30px;
-        font-weight: 600;
-        padding-bottom: 100px;
-    }
-    #NST {
-        font-size: 100px;
-        padding-bottom: 80px;
-    }
-    #fechaEvento {
-        font-size: 36px;
-    }
-    #textoEvento {
-        font-size: 36px;
-    }
-    #tickets {
-         font-size: 60px;
-    }
-    #lineaTickets {
-        border-bottom: 1px solid white;
-        width: 180px;
+@media screen and (min-width: 1200px){
+    .tasting {
+        height: 650px; 
     }
 }
-@media screen and (min-width: 1800px){
-    #tasting {
-        padding-top: 80px;
-        height: 1050px;
-    }
-    #spEvent {
-        font-size: 36px;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        padding-bottom: 100px;
-    }
-}
-#about {
-    padding-top: 25px;
+.about {
+    padding-top: 35px;
     padding-bottom: 15px;
     background-color: #D6D7C9;
 }
-#textAbout {
-    padding-right: 10px;
+.textAbout {
+    padding-right: 30px;
 }
 .lineaAbout {
-    border-bottom: 1px solid #dba646;
+    border-bottom: 1px solid #dba646 !important;
     width: 68px;
 }
-#titAbout {
-    padding-top: 10px;
+.titAbout {
+    padding-top: 0px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
     color: #1C3B4D;
     font-weight: 700;
     letter-spacing: 0.75px;
     padding-bottom: 60px;
 }
-#northSouth {
+.northSouth {
     font-size: 54px;
     font-weight: 300;
     color: #1C3B4D;
     line-height: normal;
     padding-bottom: 30px;
 }
-#food {
+.food {
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -401,21 +343,21 @@ ul {
     line-height: normal;
     padding-bottom: 20px;
 }
-#parAbout {
+.parAbout {
     font-size: 24px;
     color: #1C3B4D;
     line-height: normal;
     padding-bottom: 50px;
     letter-spacing: 0.5px;
 }
-#cita {
+.cita {
     font-size: 28px;
     line-height: normal;
     color: #1C3B4D;
     padding-right: 25px;
     padding-bottom: 15px;
 }
-#magazin {
+.magazin {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #1C3B4D;
@@ -424,80 +366,85 @@ ul {
 }
 #galeria {
     padding-top: 20px;
-    padding-bottom: 10px;
-    max-width: 430px;
+    padding-bottom: 40px;
+    max-width: 500px;
 }
 @media screen and (max-width: 576px){
-    #titAbout {
+    .lineaAbout {
+        border-bottom: 1px solid #dba646;
+        width: 68px;
+    }
+    .titAbout {
         font-size: 14px;
         padding-bottom: 30px;
     }
-    #northSouth {
+    .northSouth {
         font-size: 44px;
     }
-    #food {
+    .food {
         font-size: 16px;
     }
-    #parAbout {
+    .parAbout {
         font-size: 16px;
         padding-bottom: 25px;
     }
-    #cita {
+    .cita {
         font-size: 24px;
     }
     #galeria {
-       max-width: 270px;
+       max-width: 370px;
        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 768px){
-    #galeria {
-       max-width: 350px;
+    .lineaAbout {
+        border-bottom: 1px solid #dba646;
+        width: 56px;
+    }
+    .titAbout {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .galeria {
+       max-width: 450px;
+       padding-bottom: 40px;
     }
 }
 @media screen and (max-width: 1200px){
-    #about {
+    .about {
         min-height: 700px;
     }
-    #galeria {
+    .galeria {
        max-width: 500px;
     }
 }
 @media screen and (min-width: 1200px){
-    #about {
+    .about {
         min-height: 850px;
     }
-    #titAbout {
+    .titAbout {
         font-size: 22px;
         padding-bottom: 30px;
     }
-    #northSouth {
+    .northSouth {
         font-size: 65px;
     }
-    #food {
+    .food {
         font-size: 30px;
     }
-    #parAbout {
+    .parAbout {
         font-size: 30px;
         padding-bottom: 25px;
     }
-    #cita {
+    .cita {
         font-size: 36px;
     }
-    #magazin {
+    .magazin {
         font-size: 24px;
     }
     #galeria {
        max-width: 600px;
     }
-}
-@media screen and (min-width: 1500px) {
-    #galeria {
-        max-width: 700px;
-      }
-     #about {
-         min-height: 1000px;
-     }
 }
 #menu {
     padding-right: 15px;
@@ -508,6 +455,7 @@ ul {
 }
 #puzzle {
     padding-top: 5vh;
+    padding-bottom: 20px;
     min-width: 250px;
 }
 @media screen and (max-width: 420px){
@@ -779,7 +727,7 @@ ul {
 #ubicacion {
     width: 380px;
 }
-.lineatitContact .lineaAbout {
+.lineaContact {
     padding-top: 50px;
     color: #dba646;
     width: 98px;
@@ -814,9 +762,6 @@ ul {
     #ubicacion {
         width: 380px;
     }
-    .lineatitContact .lineaAbout {
-        width: 100px;
-    }
     #titContact {
         font-size: 18px;
     }
@@ -830,9 +775,6 @@ ul {
     }
     #ubicacion {
         width: 600px;
-    }
-    .lineatitContact .lineaAbout {
-        width: 100px;
     }
     #titContact {
         font-size: 18px;
@@ -848,9 +790,6 @@ ul {
     #ubicacion {
         width: 380px;
     }
-    .lineatitContact .lineaAbout {
-        width: 100px;
-    }
     #titContact {
         font-size: 18px;
     }
@@ -864,9 +803,6 @@ ul {
     }
     #ubicacion {
         width: 460px;
-    }
-    .lineatitContact .lineaAbout {
-        width: 110px;
     }
     #titContact {
         font-size: 22px;
@@ -882,53 +818,11 @@ ul {
     #ubicacion {
         width: 560px;
     }
-    .lineatitContact .lineaAbout {
-        width: 112px;
-    }
     #titContact {
         font-size: 24px;
     }
     .textContact {
         font-size: 18px;
-    }
-}
-@media screen and (min-width: 1400px) {
-    #contact {
-        min-height: 900px;
-    }
-    #ubicacion {
-        width: 680px;
-    }
-    .lineatitContact .lineaAbout {
-        width: 124px;
-    }
-    #titContact {
-        font-size: 26px;
-    }
-    .textContact {
-        font-size: 20px;
-    }
-}
-@media screen and (min-width: 1600px) {
-    #contact {
-        min-height: 1000px;
-    }
-    #ubicacion {
-        width: 760px;
-    }
-    .lineatitContact .lineaAbout {
-        width: 136px;
-    }
-    #titContact {
-        font-size: 28px;
-    }
-    .textContact {
-        font-size: 22px;
-    }
-}
-@media screen and (min-width: 1800px) {
-    #ubicacion {
-        width: 850px;
     }
 }
 #sketchesofSpain {
