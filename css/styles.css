@@ -809,6 +809,9 @@ ul {
     #ubicacion {
         width: 380px;
     }
+    #descripContact {
+        padding-left: 30px;
+    }
     #lineatitContact {
         width: 100px;
     }
@@ -819,7 +822,7 @@ ul {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 759px) {
     #contact {
         min-height: 1000px;
     }
@@ -836,12 +839,15 @@ ul {
         font-size: 14px;
     }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 760px) {
     #contact {
         min-height: 1000px;
     }
     #ubicacion {
         width: 380px;
+    }
+    #descripContact {
+        padding-left: 80px;
     }
     #lineatitContact {
         width: 100px;
@@ -859,6 +865,9 @@ ul {
     }
     #ubicacion {
         width: 460px;
+    }
+    #descripContact {
+        padding-left: 60px;
     }
     #lineatitContact {
         width: 110px;
