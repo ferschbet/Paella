@@ -893,7 +893,6 @@ ul {
 }
 #minilogo {
     float: left;
-    padding-left: 20px;
     padding-top: 5px;
     max-width: 100px;
 }
@@ -972,7 +971,7 @@ ul {
 @media screen and (max-width: 576px) {
     #minilogo {
         padding-left: 5px;
-        max-width: 90px;
+        max-width: 80px;
     }
     #textSketches {
         padding-left: 100px;
@@ -1004,9 +1003,18 @@ ul {
         padding-left: 5px;
     }
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 768px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 80px;
+    }
+    #textSketches {
+        padding-left: 90px;
+        padding-top: 25px;
+    }
     #subscribe {
-        padding-left: 30px !important;
+        padding-left: 30px;
+        font-size: 26px;
     }
     #signup {
         padding-left: 30px;
@@ -1032,7 +1040,15 @@ ul {
         text-align: center;
     }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 769px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 80px;
+    }
+    #textSketches {
+        padding-left: 90px;
+        padding-top: 25px;
+    }
     #subscribe {
         padding-left: 120px;
         font-size: 25px;
@@ -1066,21 +1082,21 @@ ul {
 }
 @media screen and (min-width: 992px) {
     #subscribe {
-        padding-left: 120px;
+        padding-left: 90px;
         font-size: 26px;
     }
     #signup {
-        padding-left: 0px;
+        padding-left: 90px;
         font-size: 16px;
     }
     #form {
-        padding-left: 120px;
+        padding-left: 90px;
     }
     #btnSignup {
         min-width: 120px;
     }
     #privacy {
-        padding-left: 80px;
+        padding-left: 90px;
         padding-bottom: 50px;
         font-size: 16px;
     }
