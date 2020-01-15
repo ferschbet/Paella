@@ -775,6 +775,7 @@ ul {
 }
 #lineatitContact {
     padding-top: 50px;
+    border-bottom: 1px solid #dba646;
     color: #dba646;
     width: 98px;
 }
