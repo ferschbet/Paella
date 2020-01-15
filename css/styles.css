@@ -586,7 +586,7 @@ ul {
 .subtitle {
     padding-top: 10px;
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px)
     #menu {
         padding-right: 15px;
     }
@@ -766,13 +766,6 @@ ul {
     background-position: center;
     height: 650px;
 }
-#map {
-    padding-left: 60px;
-    padding-top: 90px;
-}
-#ubicacion {
-    width: 380px;
-}
 #lineatitContact {
     padding-top: 50px;
     border-bottom: 1px solid #dba646;
@@ -802,13 +795,6 @@ ul {
     #contact {
         min-height: 1000px;
     }
-    #map {
-        padding-left: 30px;
-        padding-top: 45px;
-    }
-    #ubicacion {
-        width: 380px;
-    }
     #descripContact {
         padding-left: 30px;
     }
@@ -826,9 +812,6 @@ ul {
     #contact {
         min-height: 1000px;
     }
-    #ubicacion {
-        width: 600px;
-    }
     #lineatitContact {
         width: 100px;
     }
@@ -842,9 +825,6 @@ ul {
 @media screen and (min-width: 760px) {
     #contact {
         min-height: 1000px;
-    }
-    #ubicacion {
-        width: 380px;
     }
     #descripContact {
         padding-left: 80px;
@@ -863,9 +843,6 @@ ul {
     #contact {
         min-height: 700px;
     }
-    #ubicacion {
-        width: 460px;
-    }
     #descripContact {
         padding-left: 60px;
     }
@@ -883,9 +860,6 @@ ul {
     #contact {
         min-height: 800px;
     }
-    #ubicacion {
-        width: 560px;
-    }
     #lineatitContact {
         width: 112px;
     }
@@ -899,9 +873,6 @@ ul {
 @media screen and (min-width: 1400px) {
     #contact {
         min-height: 900px;
-    }
-    #ubicacion {
-        width: 680px;
     }
     #lineatitContact {
         width: 124px;
@@ -917,9 +888,6 @@ ul {
     #contact {
         min-height: 1000px;
     }
-    #ubicacion {
-        width: 760px;
-    }
     #lineatitContact {
         width: 136px;
     }
@@ -928,11 +896,6 @@ ul {
     }
     .textContact {
         font-size: 22px;
-    }
-}
-@media screen and (min-width: 1800px) {
-    #ubicacion {
-        width: 850px;
     }
 }
 #sketchesofSpain {
