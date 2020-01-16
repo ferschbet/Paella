@@ -20,15 +20,20 @@ ul {
 .bg-dark.scrolled {
     background-color: #030A10 !important;
 }
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
 .navbar-nav {
-    padding-top: 50px;
+    vertical-align: middle;
 }
 .scrolled .navbar-brand {
-    position: absolute;
-    top: 0.85vh;
-    left: 0.75vw;
     height: 65px;
-    width: 65px; 
+    width: 65px;
+    vertical-align: middle;
+}
+.scrolled .navbar-nav {
+    min-width: 190px;
 }
 .logo {
     position: absolute;
@@ -40,47 +45,29 @@ ul {
 .shrink {
     width:65px;
     height:65px;
-    position: absolute;
-    top: 0.85vh;
-    left: 0.75vw;
 }
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
 @media screen and (max-width: 415px){
-    .navbar-toggler {
-       position: absolute;
-       top: 3.24vh;
-       left: 70vw;
-    }
     .navbar-nav {
-        padding-top: 50px;
-        font-size: 12px;
+       font-size: 12px;
     }
     .logo {
-        height: 75px;
-        width: 75px;
-        position: absolute;
-        top: 1.5vh;
-        left: 0.05vw !important;
+       height: 65px;
+       width: 65px;
+       vertical-align: middle;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .navbar-nav {
-        padding-top: 65px;
         font-size: 12px;
+        vertical-align: middle;
     }
-    .logo {
+   .logo {
         height: 65px;
         width: 65px;
-        position: absolute;
-        top: 0.85vh;
-        left: 0.75vw !important;
-    }
-    .navbar-toggler {
-        position: absolute;
-        top: 3.24vh;
-        left: 80vw;
+        vertical-align: middle;
     }
     .nav-link:hover {
         border-bottom: none;
@@ -199,7 +186,6 @@ ul {
     padding-top: 10px;
     padding-right: 10px;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
     color: white;
     padding-bottom: 15px;
 }
@@ -207,7 +193,6 @@ ul {
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 30px;
-    font-size: 16.8px;
     line-height: normal;
 }
 #tickets {
@@ -259,10 +244,10 @@ ul {
         padding-bottom: 25px;
     }
     #fechaEvento {
-        font-size: 12px;
+        font-size: 21px;
     }
     #textoEvento {
-        font-size: 12px;
+        font-size: 21px;
     }
 }
 @media screen and (max-width: 1000px){
@@ -275,11 +260,11 @@ ul {
         padding-bottom: 25px;
     }
     #fechaEvento {
-        font-size: 24px;
+        font-size: 21px;
         padding-right: 10px;
     }
     #textoEvento {
-        font-size: 24px;
+    /*font-size: 24px;*/
         padding-right: 20px;
     }
 }
@@ -488,40 +473,7 @@ ul {
 }
 #puzzle {
     padding-top: 5vh;
-    min-width: 250px;
-}
-@media screen and (max-width: 420px){
-    #puzzle {
-        width: 270px;
-    }
-}
-@media screen and (max-width: 576px){
-    #puzzle {
-        width: 420px;
-    }
-}
-@media screen and (max-width: 768px){
-    #puzzle {
-        max-width: 500px;
-        min-height: 2250px;
-    }
-}
-@media screen and (min-width: 768px){
-    #puzzle {
-        min-width: 350px;
-        max-width:500px;
-    }
-}
-@media screen and (min-width: 992px){
-    #puzzle {
-        max-width: 270px;
-    }
-}
-@media screen and (min-width: 1200px){
-    #puzzle {
-        max-width: 600px;
-        min-height: 3000px;
-    }
+    max-width: 100%;
 }
 #lineadispMenu {
     border-bottom: 1px solid white;
@@ -553,7 +505,7 @@ ul {
 }
 .titMenu {
     font-family: sans-serif;
-    font-size: 0.7rem;
+    font-size: 12px;
     letter-spacing: 0.85px;
     line-height: 0.25;
     padding-top: 0px;
@@ -572,7 +524,7 @@ ul {
 .subtitle {
     padding-top: 10px;
 }
-@media screen and (max-width: 576px)
+@media screen and (max-width: 576px) {
     #menu {
         padding-right: 15px;
     }
@@ -603,7 +555,7 @@ ul {
         padding-right: 15px;
     }
     .textoMenu {
-        font-size: 0.6rem;
+        font-size: 12px;
     }
     .titMenu {
         font-family: sans-serif;
@@ -1050,21 +1002,21 @@ ul {
         padding-top: 25px;
     }
     #subscribe {
-        padding-left: 120px;
+        padding-left: 90px;
         font-size: 25px;
     }
     #signup {
-        padding-left: 0px;
+        padding-left: 90px;
         font-size: 15px;
     }
     #form {
-        padding-left: 120px;
+        padding-left: 90px;
     }
     #btnSignup {
         min-width: 100px;
     }
     #privacy {
-        padding-left: 80px;
+        padding-left: 90px;
         padding-bottom: 50px;
         font-size: 15px;
     }
@@ -1129,7 +1081,7 @@ ul {
         font-size: 28px;
     }
     #signup {
-        padding-left: 0px;
+        padding-left: 140px;
         font-size: 18px;
     }
     #form {
@@ -1139,7 +1091,7 @@ ul {
         min-width: 140px;
     }
     #privacy {
-        padding-left: 100px;
+        padding-left: 140px;
         padding-bottom: 65px;
         font-size: 18px;
     }
@@ -1161,7 +1113,7 @@ ul {
         font-size: 30px;
     }
     #signup {
-        padding-left: 0px;
+        padding-left: 140px;
         font-size: 20px;
     }
     #form {
@@ -1171,7 +1123,7 @@ ul {
         min-width: 180px;
     }
     #privacy {
-        padding-left: 100px;
+        padding-left: 140px;
         padding-bottom: 140px;
         font-size: 20px;
     }
