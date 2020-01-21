@@ -10,9 +10,7 @@ ul {
     background-color: black;
     min-height: 115px;
     max-height: 400px;
-}
-.nav-item {
-    text-align: left;
+
 }
 .bg-dark {
     background-color: transparent !important;
@@ -20,54 +18,59 @@ ul {
 .bg-dark.scrolled {
     background-color: #030A10 !important;
 }
-.navbar {
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar-nav {
-    vertical-align: middle;
+.navbar-brand {
+    opacity:1;
 }
 .scrolled .navbar-brand {
-    height: 65px;
-    width: 65px;
-    vertical-align: middle;
-}
-.scrolled .navbar-nav {
-    min-width: 190px;
+    position: absolute;
+    top: 1.5vh;
+    left: 0.75vw;
+    height: 85px;
+    width: 85px; 
 }
 .logo {
     position: absolute;
     top: 3.24vh;
     left: 0.75vw;
-    height: 150px;
-    width: 150px;
-}
-.shrink {
-    width:65px;
-    height:65px;
-}
+    height: 170px;
+    width: 170px;
+ }
+ .shrink {
+    width:75px;
+    height:75px;
+    position: absolute;
+    top: 3.24vh;
+    left: 0.75vw;
+ }
 .nav-link:hover {
     border-bottom: 1px solid #dba646;
 }
 @media screen and (max-width: 415px){
-    .navbar-nav {
-       font-size: 12px;
+    .navbar-toggler {
+        position: absolute;
+        top: 3.24vh;
+        left: 80vw;
     }
     .logo {
-       height: 65px;
-       width: 65px;
-       vertical-align: middle;
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: 1.5vh;
+        left: 0.05vw !important;
     }
 }
-@media screen and (max-width: 768px){
-    .navbar-nav {
-        font-size: 12px;
-        vertical-align: middle;
+@media screen and (max-width: 768px) {
+    .logo {
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        top: 1.5vh;
+        left: 0.75vw !important;
     }
-   .logo {
-        height: 65px;
-        width: 65px;
-        vertical-align: middle;
+    .navbar-toggler {
+        position: absolute;
+        top: 3.24vh;
+        left: 80vw;
     }
     .nav-link:hover {
         border-bottom: none;
@@ -78,10 +81,9 @@ ul {
     height: 100vh;
     opacity: 1;
     position: relative;
-    text-align: center;
 }
 .display-1 {
-    font-size: 96px;
+    font-size: 6rem;
     color: #dba646;
     text-align: center;
 }
@@ -104,36 +106,14 @@ ul {
     letter-spacing: 0.85px;
     color: white;
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 350px){
     .display-1 {
-        font-size: 46px;
-        text-align: center;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    #linea {
-        margin-top: 1.823vh;
-        width:12.5vw;
-        border-bottom: solid white 2px;
-    }
-    #address {
-        font-size: 26px;
-    }
-    #cityAddress {
-        font-size: 10px;
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 845px){
+@media screen and (max-width: 768px){
     .display-1 {
-        font-size: 46px;
-    }
-    #linea {
-        margin-top: 1.823vh;
-        width:10vw;
-        border-bottom: solid white 2px;
-    }
-    #address {
-        font-size: 26px;
+        font-size: 3.5rem;
     }
 }
 .img-fluid {
@@ -157,7 +137,7 @@ ul {
     padding-right: 0px;
 }
 #event {
-    padding-left: 30px;
+    padding-left: 0px;
     padding-top: 10px;
     padding-right: 15px;
     min-height: 51.5vh;
@@ -172,6 +152,7 @@ ul {
     font-size: 16px;
     font-weight: 600;
     color: #1C3B4D;
+ /* padding-left: 32px;*/
     padding-top: 10px;
     padding-bottom: 45px;
 }
@@ -186,6 +167,7 @@ ul {
     padding-top: 10px;
     padding-right: 10px;
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: white;
     padding-bottom: 15px;
 }
@@ -193,6 +175,7 @@ ul {
     padding-top: 10px;
     padding-bottom: 15px;
     padding-right: 30px;
+    font-size: 16.8px;
     line-height: normal;
 }
 #tickets {
@@ -202,6 +185,17 @@ ul {
 #lineaTickets {
     border-bottom: 1px solid white;
     width: 100px;
+}
+@media screen and (max-width: 350px){
+    #spEvent {
+        padding-left: 12px;
+    }
+    #fechaEvento {
+        font-size: 12px;
+    }
+    #textoEvento {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 576px){
     #tasting {
@@ -244,10 +238,10 @@ ul {
         padding-bottom: 25px;
     }
     #fechaEvento {
-        font-size: 21px;
+        font-size: 14px;
     }
     #textoEvento {
-        font-size: 21px;
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 1000px){
@@ -260,11 +254,11 @@ ul {
         padding-bottom: 25px;
     }
     #fechaEvento {
-        font-size: 21px;
+        font-size: 24px;
         padding-right: 10px;
     }
     #textoEvento {
-    /*font-size: 24px;*/
+        font-size: 24px;
         padding-right: 20px;
     }
 }
@@ -352,7 +346,7 @@ ul {
 #textAbout {
     padding-right: 10px;
 }
-#lineaAbout {
+.lineaAbout {
     border-bottom: 1px solid #dba646;
     width: 68px;
 }
@@ -403,6 +397,8 @@ ul {
 }
 #galeria {
     padding-top: 20px;
+    padding-bottom: 10px;
+    max-width: 430px;
 }
 @media screen and (max-width: 576px){
     #titAbout {
@@ -422,10 +418,22 @@ ul {
     #cita {
         font-size: 24px;
     }
+    #galeria {
+       max-width: 270px;
+       padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    #galeria {
+       max-width: 350px;
+    }
 }
 @media screen and (max-width: 1200px){
     #about {
         min-height: 700px;
+    }
+    #galeria {
+       max-width: 500px;
     }
 }
 @media screen and (min-width: 1200px){
@@ -473,7 +481,40 @@ ul {
 }
 #puzzle {
     padding-top: 5vh;
-    max-width: 100%;
+    min-width: 250px;
+}
+@media screen and (max-width: 420px){
+    #puzzle {
+        width: 270px;
+    }
+}
+@media screen and (max-width: 576px){
+    #puzzle {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 768px){
+    #puzzle {
+        max-width: 500px;
+        min-height: 2250px;
+    }
+}
+@media screen and (min-width: 768px){
+    #puzzle {
+        min-width: 350px;
+        max-width:500px;
+    }
+}
+@media screen and (min-width: 992px){
+    #puzzle {
+        max-width: 270px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #puzzle {
+        max-width: 600px;
+        min-height: 3000px;
+    }
 }
 #lineadispMenu {
     border-bottom: 1px solid white;
@@ -505,7 +546,7 @@ ul {
 }
 .titMenu {
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 0.7rem;
     letter-spacing: 0.85px;
     line-height: 0.25;
     padding-top: 0px;
@@ -524,7 +565,7 @@ ul {
 .subtitle {
     padding-top: 10px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px){
     #menu {
         padding-right: 15px;
     }
@@ -555,7 +596,7 @@ ul {
         padding-right: 15px;
     }
     .textoMenu {
-        font-size: 12px;
+        font-size: 0.6rem;
     }
     .titMenu {
         font-family: sans-serif;
@@ -694,7 +735,7 @@ ul {
         font-size: 36px;
     }
     #textChef {
-        font-size: 30px;
+        font-size: 36px;
     }
 }
 #contact {
@@ -704,9 +745,15 @@ ul {
     background-position: center;
     height: 650px;
 }
-#lineatitContact {
+#map {
+    padding-left: 60px;
+    padding-top: 90px;
+}
+#ubicacion {
+    width: 380px;
+}
+.lineatitContact .lineaAbout {
     padding-top: 50px;
-    border-bottom: 1px solid #dba646;
     color: #dba646;
     width: 98px;
 }
@@ -733,10 +780,14 @@ ul {
     #contact {
         min-height: 1000px;
     }
-    #descripContact {
+    #map {
         padding-left: 30px;
+        padding-top: 45px;
     }
-    #lineatitContact {
+    #ubicacion {
+        width: 380px;
+    }
+    .lineatitContact .lineaAbout {
         width: 100px;
     }
     #titContact {
@@ -746,11 +797,14 @@ ul {
         font-size: 14px;
     }
 }
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 768px) {
     #contact {
         min-height: 1000px;
     }
-    #lineatitContact {
+    #ubicacion {
+        width: 600px;
+    }
+    .lineatitContact .lineaAbout {
         width: 100px;
     }
     #titContact {
@@ -760,14 +814,14 @@ ul {
         font-size: 14px;
     }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 800px) {
     #contact {
         min-height: 1000px;
     }
-    #descripContact {
-        padding-left: 80px;
+    #ubicacion {
+        width: 380px;
     }
-    #lineatitContact {
+    .lineatitContact .lineaAbout {
         width: 100px;
     }
     #titContact {
@@ -781,10 +835,10 @@ ul {
     #contact {
         min-height: 700px;
     }
-    #descripContact {
-        padding-left: 60px;
+    #ubicacion {
+        width: 460px;
     }
-    #lineatitContact {
+    .lineatitContact .lineaAbout {
         width: 110px;
     }
     #titContact {
@@ -798,7 +852,10 @@ ul {
     #contact {
         min-height: 800px;
     }
-    #lineatitContact {
+    #ubicacion {
+        width: 560px;
+    }
+    .lineatitContact .lineaAbout {
         width: 112px;
     }
     #titContact {
@@ -812,7 +869,10 @@ ul {
     #contact {
         min-height: 900px;
     }
-    #lineatitContact {
+    #ubicacion {
+        width: 680px;
+    }
+    .lineatitContact .lineaAbout {
         width: 124px;
     }
     #titContact {
@@ -826,7 +886,10 @@ ul {
     #contact {
         min-height: 1000px;
     }
-    #lineatitContact {
+    #ubicacion {
+        width: 760px;
+    }
+    .lineatitContact .lineaAbout {
         width: 136px;
     }
     #titContact {
@@ -834,6 +897,11 @@ ul {
     }
     .textContact {
         font-size: 22px;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #ubicacion {
+        width: 850px;
     }
 }
 #sketchesofSpain {
@@ -845,6 +913,7 @@ ul {
 }
 #minilogo {
     float: left;
+    padding-left: 20px;
     padding-top: 5px;
     max-width: 100px;
 }
@@ -923,7 +992,7 @@ ul {
 @media screen and (max-width: 576px) {
     #minilogo {
         padding-left: 5px;
-        max-width: 80px;
+        max-width: 90px;
     }
     #textSketches {
         padding-left: 100px;
@@ -939,7 +1008,7 @@ ul {
         padding-left: 0px !important;
     }
     #btnSignup {
-        padding-right: 10px;
+        min-width: 80px;
     }
     #privacy {
         padding-left: 0px !important;
@@ -956,27 +1025,21 @@ ul {
     }
 }
 @media screen and (max-width: 768px) {
-    #minilogo {
-        padding-left: 5px;
-        max-width: 80px;
-    }
-    #textSketches {
-        padding-left: 90px;
-        padding-top: 25px;
-    }
     #subscribe {
-        padding-left: 30px;
-        font-size: 26px;
+        padding-left: 120px;
     }
     #signup {
-        padding-left: 30px;
+        padding-left: 0px;
         font-size: 16px;
     }
     #form {
-        padding-left: 30px;
+        padding-left: 120px;
+    }
+    #btnSignup {
+        min-width: 120px;
     }
     #privacy {
-        padding-left: 30px;
+        padding-left: 80px;
         padding-bottom: 30px;
         font-size: 16px;
     }
@@ -992,31 +1055,23 @@ ul {
         text-align: center;
     }
 }
-@media screen and (min-width: 769px) {
-    #minilogo {
-        padding-left: 5px;
-        max-width: 80px;
-    }
-    #textSketches {
-        padding-left: 90px;
-        padding-top: 25px;
-    }
+@media screen and (min-width: 800px) {
     #subscribe {
-        padding-left: 90px;
+        padding-left: 120px;
         font-size: 25px;
     }
     #signup {
-        padding-left: 90px;
+        padding-left: 0px;
         font-size: 15px;
     }
     #form {
-        padding-left: 90px;
+        padding-left: 120px;
     }
     #btnSignup {
         min-width: 100px;
     }
     #privacy {
-        padding-left: 90px;
+        padding-left: 80px;
         padding-bottom: 50px;
         font-size: 15px;
     }
@@ -1034,21 +1089,21 @@ ul {
 }
 @media screen and (min-width: 992px) {
     #subscribe {
-        padding-left: 90px;
+        padding-left: 120px;
         font-size: 26px;
     }
     #signup {
-        padding-left: 90px;
+        padding-left: 0px;
         font-size: 16px;
     }
     #form {
-        padding-left: 90px;
+        padding-left: 120px;
     }
     #btnSignup {
         min-width: 120px;
     }
     #privacy {
-        padding-left: 90px;
+        padding-left: 80px;
         padding-bottom: 50px;
         font-size: 16px;
     }
@@ -1081,7 +1136,7 @@ ul {
         font-size: 28px;
     }
     #signup {
-        padding-left: 140px;
+        padding-left: 0px;
         font-size: 18px;
     }
     #form {
@@ -1091,7 +1146,7 @@ ul {
         min-width: 140px;
     }
     #privacy {
-        padding-left: 140px;
+        padding-left: 100px;
         padding-bottom: 65px;
         font-size: 18px;
     }
@@ -1113,7 +1168,7 @@ ul {
         font-size: 30px;
     }
     #signup {
-        padding-left: 140px;
+        padding-left: 0px;
         font-size: 20px;
     }
     #form {
@@ -1123,7 +1178,7 @@ ul {
         min-width: 180px;
     }
     #privacy {
-        padding-left: 140px;
+        padding-left: 100px;
         padding-bottom: 140px;
         font-size: 20px;
     }
