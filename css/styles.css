@@ -1,0 +1,1175 @@
+body {
+    font-family: 'Zilla Slab', serif;
+}
+ul {
+    list-style-type: none;
+}
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: black;
+    min-height: 115px;
+    max-height: 400px;
+}
+.nav-item {
+    text-align: left;
+}
+.bg-dark {
+    background-color: transparent !important;
+}
+.bg-dark.scrolled {
+    background-color: #030A10 !important;
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-nav {
+    vertical-align: middle;
+}
+.scrolled .navbar-brand {
+    height: 65px;
+    width: 65px;
+    vertical-align: middle;
+}
+.scrolled .navbar-nav {
+    min-width: 190px;
+}
+.logo {
+    position: absolute;
+    top: 3.24vh;
+    left: 0.75vw;
+    height: 150px;
+    width: 150px;
+}
+.shrink {
+    width:65px;
+    height:65px;
+}
+.nav-link:hover {
+    border-bottom: 1px solid #dba646;
+}
+@media screen and (max-width: 415px){
+    .navbar-nav {
+       font-size: 12px;
+    }
+    .logo {
+       height: 65px;
+       width: 65px;
+       vertical-align: middle;
+    }
+}
+@media screen and (max-width: 768px){
+    .navbar-nav {
+        font-size: 12px;
+        vertical-align: middle;
+    }
+   .logo {
+        height: 65px;
+        width: 65px;
+        vertical-align: middle;
+    }
+    .nav-link:hover {
+        border-bottom: none;
+    }
+}
+#hero {
+    background: url("../images/web-0.jpg") center / cover no-repeat;
+    height: 100vh;
+    opacity: 1;
+    position: relative;
+    text-align: center;
+}
+.display-1 {
+    font-size: 96px;
+    color: #dba646;
+    text-align: center;
+}
+#linea {
+    margin-top: 1.823vh;
+    width:12.5vw;
+    border-bottom: solid white 2px;
+}
+#address {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: white;
+    margin-top: 20px;
+}
+#cityAddress {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75em;
+    font-weight: 600;
+    letter-spacing: 0.85px;
+    color: white;
+}
+@media screen and (max-width: 576px){
+    .display-1 {
+        font-size: 46px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #linea {
+        margin-top: 1.823vh;
+        width:12.5vw;
+        border-bottom: solid white 2px;
+    }
+    #address {
+        font-size: 26px;
+    }
+    #cityAddress {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 845px){
+    .display-1 {
+        font-size: 46px;
+    }
+    #linea {
+        margin-top: 1.823vh;
+        width:10vw;
+        border-bottom: solid white 2px;
+    }
+    #address {
+        font-size: 26px;
+    }
+}
+.img-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#tasting {
+    padding-top: 40px;
+    background-color: #dba646;
+    min-height: 220px;
+    padding-bottom: 50px;
+}
+.paella {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#popupSeries {
+    padding-top: 75px;
+    padding-bottom: 28px;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+#event {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 15px;
+    min-height: 51.5vh;
+    color: #1C3B4D;
+}
+#lineaEvent {
+    border-bottom: 1px solid white;
+    width: 75px;
+}
+#spEvent {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1C3B4D;
+    padding-top: 10px;
+    padding-bottom: 45px;
+}
+#NST {
+    font-size: 56px;
+    font-weight: 300;
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 25px;
+}
+#fechaEvento {
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding-bottom: 15px;
+}
+#textoEvento {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    line-height: normal;
+}
+#tickets {
+    font-size: 32px;
+    font-weight: 500;
+}
+#lineaTickets {
+    border-bottom: 1px solid white;
+    width: 100px;
+}
+@media screen and (max-width: 576px){
+    #tasting {
+        height: 850px;
+    }
+    #popupSeries {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #spEvent {
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #NST {
+        font-size: 50px;
+    }
+    #fechaEvento {
+        font-size: 12px;
+    }
+    #textoEvento {
+        font-size: 12px;
+    }
+    #tickets {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    #tasting {
+        height: 1050px; 
+    }
+    #NST {
+        font-size: 56px;
+    }
+    #spEvent {
+        font-size: 12px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #fechaEvento {
+        font-size: 21px;
+    }
+    #textoEvento {
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #NST {
+        font-size: 56px;
+    }
+    #spEvent {
+        font-size: 16px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #fechaEvento {
+        font-size: 21px;
+        padding-right: 10px;
+    }
+    #textoEvento {
+    /*font-size: 24px;*/
+        padding-right: 20px;
+    }
+}
+@media screen and (min-width: 1000px){
+    #tasting {
+        height: 850px; 
+    }
+    #spEvent {
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+    #NST {
+        font-size: 68px;
+    }
+    #fechaEvento {
+        font-size: 28px;
+    }
+    #textoEvento {
+        font-size: 28px;
+    }
+    #tickets {
+         font-size: 50px;
+    }
+    #lineaTickets {
+        border-bottom: 1px solid white;
+        width: 150px;
+    }
+}
+@media screen and (min-width: 1500px){
+    #tasting {
+        padding-top: 80px;
+        height: 1100px;
+    }
+    #popupSeries {
+        padding-top: 120px;
+        padding-bottom: 70px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+    #lineaEvent {
+        border-bottom: 2px solid white;
+        width: 150px;
+    }
+    #spEvent {
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 100px;
+    }
+    #NST {
+        font-size: 100px;
+        padding-bottom: 80px;
+    }
+    #fechaEvento {
+        font-size: 36px;
+    }
+    #textoEvento {
+        font-size: 36px;
+    }
+    #tickets {
+         font-size: 60px;
+    }
+    #lineaTickets {
+        border-bottom: 1px solid white;
+        width: 180px;
+    }
+}
+@media screen and (min-width: 1800px){
+    #tasting {
+        padding-top: 80px;
+        height: 1050px;
+    }
+    #spEvent {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding-bottom: 100px;
+    }
+}
+#about {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #D6D7C9;
+}
+#textAbout {
+    padding-right: 10px;
+}
+#lineaAbout {
+    border-bottom: 1px solid #dba646;
+    width: 68px;
+}
+#titAbout {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #1C3B4D;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    padding-bottom: 60px;
+}
+#northSouth {
+    font-size: 54px;
+    font-weight: 300;
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 30px;
+}
+#food {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #dba646;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+#parAbout {
+    font-size: 24px;
+    color: #1C3B4D;
+    line-height: normal;
+    padding-bottom: 50px;
+    letter-spacing: 0.5px;
+}
+#cita {
+    font-size: 28px;
+    line-height: normal;
+    color: #1C3B4D;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+#magazin {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #1C3B4D;
+    text-align: right;
+    padding-right: 50px;
+}
+#galeria {
+    padding-top: 20px;
+}
+@media screen and (max-width: 576px){
+    #titAbout {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    #northSouth {
+        font-size: 44px;
+    }
+    #food {
+        font-size: 16px;
+    }
+    #parAbout {
+        font-size: 16px;
+        padding-bottom: 25px;
+    }
+    #cita {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #about {
+        min-height: 700px;
+    }
+}
+@media screen and (min-width: 1200px){
+    #about {
+        min-height: 850px;
+    }
+    #titAbout {
+        font-size: 22px;
+        padding-bottom: 30px;
+    }
+    #northSouth {
+        font-size: 65px;
+    }
+    #food {
+        font-size: 30px;
+    }
+    #parAbout {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+    #cita {
+        font-size: 36px;
+    }
+    #magazin {
+        font-size: 24px;
+    }
+    #galeria {
+       max-width: 600px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #galeria {
+        max-width: 700px;
+      }
+     #about {
+         min-height: 1000px;
+     }
+}
+#menu {
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    background-color: #1C3B4D;
+    min-height: 2100px;
+}
+.galImg {
+    padding-top: 5vh;
+    width: 100%;
+    max-width:508px;
+    display:inline-block;
+}
+.secondRow {
+    display:inline-block;
+}
+.firstCol {
+    display:inline-block;
+}
+.secondCol {
+    display:inline-block;
+}
+.img1 {
+    width:324px;
+    height:200px;
+}
+.img2 {
+    width:162px;
+    height:330px;
+}
+.img3 {
+    width:162px;
+    height:165px;
+}
+.img4 {
+    width:162px;
+    height:253px;
+}
+.chipir {
+    flex-shrink: 2;   
+}
+#lineadispMenu {
+    border-bottom: 1px solid white;
+    width: 70px;
+    position: absolute;
+    top: 2vh;
+}
+#displayMenu {
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.75px;
+    color: #dba646;
+    padding-top: 10px;
+    position: absolute;
+    top: 1.5vh;
+}
+#foods {
+    padding-top: 40px;
+}
+.textoMenu {
+    font-size: 0.7rem;
+    color: white;
+}
+.titmenuLine {
+    border-top: 1px solid #dba646;
+    width: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.titMenu {
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.85px;
+    line-height: 0.25;
+    padding-top: 0px;
+}
+.item {
+    padding-top: 12px;
+    line-height: normal;
+}
+#assorted {
+    padding-top: 25px;
+}
+#drinks {
+    position: absolute;
+    top: 6vh;
+}
+.subtitle {
+    padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+    #menu {
+        padding-right: 15px;
+    }
+    #lineadispMenu {
+        position: absolute;
+        left: 30px;
+    }
+    #displayMenu {
+        position: absolute;
+        top: 1.5vh;
+        left: 30px;
+    }
+    .item {
+        padding-top: 5px;
+    }
+    #foods {
+        padding-top: 35px;
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+    #assorted {
+        padding-top: 10px;
+    }
+    #drinks {
+        position: absolute;
+        top: 25px;
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+    .textoMenu {
+        font-size: 12px;
+    }
+    .titMenu {
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        line-height: 0.05;
+        padding-bottom: 5px;
+    }
+    .titmenuLine {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .subtitle {
+        padding-top: 2.5px;
+    }
+}
+@media screen and (max-width: 768px){
+    #menu {
+        padding-right: 10px;
+        min-height: 2500px;
+    }
+    .textoMenu {
+        font-size: 0.85rem;
+        line-height: 0.99;
+    }
+    .titMenu {
+        font-size: 0.85rem;
+        line-height: 0.99;
+        padding-bottom: 5px;
+    }
+}
+@media screen and (min-width: 768px){
+    #menu {
+        padding-right: 25px;
+        min-height: 1500px;
+    }
+    .textoMenu {
+        font-size: 16px;
+    }
+    .titMenu {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 992px){
+    #menu {
+        min-height: 2100px;
+    }
+    #displayMenu {
+        font-size: 24px;
+    }
+    .titMenu {
+        font-size: 20px;
+    }
+    .textoMenu {
+        font-size: 20px;
+    }
+}
+#chef {
+    background-color: #D6D7C9;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+#lineatitChef {
+    padding-top: 10px;
+    border-bottom: 1px solid #dba646;
+    width: 68px;
+}
+#titChef {
+    font-family: 'Open Sans', sans-serif;
+    color: #1C3B4D;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+#nomChef {
+    font-size: 54px;
+    color: #1C3B4D;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 40px;
+}
+#kindness {
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #dba646;
+    font-weight: 600;
+}
+#textChef {
+    color: #1C3B4D;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    padding-top: 20px;
+}
+#fotoChef {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (max-width: 576px) {
+    #titChef {
+        font-size: 16px;
+    }
+    #nomChef {
+        font-size: 36px;
+    }
+    #kindness {
+        font-size: 16px;
+    }
+    #textChef {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #titChef {
+        font-size: 24px;
+    }
+    #nomChef {
+        font-size: 54px;
+    }
+    #kindness {
+        font-size: 24px;
+    }
+    #textChef {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #titChef {
+        font-size: 36px;
+    }
+    #nomChef {
+        font-size: 81px;
+    }
+    #kindness {
+        font-size: 36px;
+    }
+    #textChef {
+        font-size: 30px;
+    }
+}
+#contact {
+    background: url("../images/web-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+}
+#lineatitContact {
+    padding-top: 50px;
+    border-bottom: 1px solid #dba646;
+    color: #dba646;
+    width: 98px;
+}
+#titContact {
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.textContact {
+    padding-top: 15px;
+    font-size: 14px;
+    color: white;
+    line-height: normal;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#talktoUs {
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 576px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #descripContact {
+        padding-left: 30px;
+    }
+    #lineatitContact {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 759px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #lineatitContact {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 760px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #descripContact {
+        padding-left: 80px;
+    }
+    #lineatitContact {
+        width: 100px;
+    }
+    #titContact {
+        font-size: 18px;
+    }
+    .textContact {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #contact {
+        min-height: 700px;
+    }
+    #descripContact {
+        padding-left: 60px;
+    }
+    #lineatitContact {
+        width: 110px;
+    }
+    #titContact {
+        font-size: 22px;
+    }
+    .textContact {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #contact {
+        min-height: 800px;
+    }
+    #lineatitContact {
+        width: 112px;
+    }
+    #titContact {
+        font-size: 24px;
+    }
+    .textContact {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    #contact {
+        min-height: 900px;
+    }
+    #lineatitContact {
+        width: 124px;
+    }
+    #titContact {
+        font-size: 26px;
+    }
+    .textContact {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    #contact {
+        min-height: 1000px;
+    }
+    #lineatitContact {
+        width: 136px;
+    }
+    #titContact {
+        font-size: 28px;
+    }
+    .textContact {
+        font-size: 22px;
+    }
+}
+#sketchesofSpain {
+    background-color: #dba646;
+    color: #1C3B4D;
+    padding-top: 20px;
+    min-height: 510px;
+    padding-bottom: 50px;
+}
+#minilogo {
+    float: left;
+    padding-top: 5px;
+    max-width: 100px;
+}
+#textSketches {
+    padding-left: 120px;
+    padding-top: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 26.25px;
+    letter-spacing: 4px;
+}
+#social {
+    font-size: 40px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.fa_custom {  
+    color: #1C3B4D; 
+    }  
+#subscribe {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+#signup {
+    font-size: 14px;
+    letter-spacing: normal;
+    padding-top: 12px;
+}
+#form {
+    padding-left: 120px;
+    padding-top: 10px;
+}
+#inputEmail {
+    float: left;
+    font-size: 14px;
+    font-style: italic;
+    vertical-align: center;
+}
+#btnSignup {
+    background-color: #1C3B4D;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    min-width: 100px;
+    height: 35px;
+    vertical-align: center;
+}
+#privacy {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 120px;
+    padding-bottom: 82px;
+}
+.nav {
+    padding-left: 103px;
+}
+#navBottom {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1C3B4D;
+    letter-spacing: 0.25px;
+    padding-right: 0px;
+}
+#copyright {
+    padding-left: 118px;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+#cuadrados {
+    padding-top: 10px;
+}
+@media screen and (max-width: 576px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 80px;
+    }
+    #textSketches {
+        padding-left: 100px;
+        padding-top: 25px;
+    }
+    #subscribe {
+        padding-left: 0px !important;
+    }
+    #signup {
+        padding-left: 0px !important;
+    }
+    #form {
+        padding-left: 0px !important;
+    }
+    #btnSignup {
+        padding-right: 10px;
+    }
+    #privacy {
+        padding-left: 0px !important;
+        padding-bottom: 30px;
+    }
+   .nav {
+        padding-left: 0px;
+    }
+    #navBottom {
+        font-size: 10px;
+    }
+    #copyright {
+        padding-left: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 80px;
+    }
+    #textSketches {
+        padding-left: 90px;
+        padding-top: 25px;
+    }
+    #subscribe {
+        padding-left: 30px;
+        font-size: 26px;
+    }
+    #signup {
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    #form {
+        padding-left: 30px;
+    }
+    #privacy {
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    #navBottom {
+        font-size: 20px;
+    }
+    #copyright {
+        padding-left: 5px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 769px) {
+    #minilogo {
+        padding-left: 5px;
+        max-width: 80px;
+    }
+    #textSketches {
+        padding-left: 90px;
+        padding-top: 25px;
+    }
+    #subscribe {
+        padding-left: 90px;
+        font-size: 25px;
+    }
+    #signup {
+        padding-left: 90px;
+        font-size: 15px;
+    }
+    #form {
+        padding-left: 90px;
+    }
+    #btnSignup {
+        min-width: 100px;
+    }
+    #privacy {
+        padding-left: 90px;
+        padding-bottom: 50px;
+        font-size: 15px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 80px;
+    }
+    #navBottom {
+        font-size: 11px;
+    }
+    #copyright {
+        padding-left: 90px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 992px) {
+    #subscribe {
+        padding-left: 90px;
+        font-size: 26px;
+    }
+    #signup {
+        padding-left: 90px;
+        font-size: 16px;
+    }
+    #form {
+        padding-left: 90px;
+    }
+    #btnSignup {
+        min-width: 120px;
+    }
+    #privacy {
+        padding-left: 90px;
+        padding-bottom: 50px;
+        font-size: 16px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 80px;
+    }
+    #navBottom {
+        font-size: 14px;
+    }
+    #copyright {
+        padding-left: 90px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #minilogo {
+        padding-left: 30px;
+        max-width: 120px;
+    }
+    #textSketches {
+        padding-left: 140px;
+        padding-top: 25px;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    #subscribe {
+        padding-left: 140px;
+        font-size: 28px;
+    }
+    #signup {
+        padding-left: 140px;
+        font-size: 18px;
+    }
+    #form {
+        padding-left: 140px;
+    }
+    #btnSignup {
+        min-width: 140px;
+    }
+    #privacy {
+        padding-left: 140px;
+        padding-bottom: 65px;
+        font-size: 18px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 100px;
+    }
+    #navBottom {
+        font-size: 16px;
+    }
+    #copyright {
+        padding-left: 100px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1500px) {
+    #subscribe {
+        padding-left: 140px;
+        font-size: 30px;
+    }
+    #signup {
+        padding-left: 140px;
+        font-size: 20px;
+    }
+    #form {
+        padding-left: 140px;
+    }
+    #btnSignup {
+        min-width: 180px;
+    }
+    #privacy {
+        padding-left: 140px;
+        padding-bottom: 140px;
+        font-size: 20px;
+    }
+    .nav {
+        justify-content: center;
+        padding-left: 100px;
+    }
+    #navBottom {
+        font-size: 18px;
+    }
+    #copyright {
+        padding-left: 100px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1800px) {
+    #privacy {
+        padding-bottom: 200px;
+}
