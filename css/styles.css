@@ -21,6 +21,7 @@ ul {
     background-color: #030A10 !important;
 }
 .navbar {
+    padding: 2.25rem 1rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -53,6 +54,7 @@ ul {
     .navbar-nav {
        font-size: 12px;
        vertical-align: bottom;
+       align-items: flex-start;
     }
     .logo {
        height: 65px;
@@ -64,6 +66,7 @@ ul {
     .navbar-nav {
         font-size: 12px;
         vertical-align: middle;
+        align-items: flex-start;
     }
    .logo {
         height: 65px;
