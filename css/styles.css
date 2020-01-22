@@ -37,7 +37,7 @@ ul {
 }
 .logo {
     position: absolute;
-    top: 3.24vh;
+    top: 1.87vh;
     left: 0.75vw;
     height: 150px;
     width: 150px;
@@ -52,6 +52,7 @@ ul {
 @media screen and (max-width: 415px){
     .navbar-nav {
        font-size: 12px;
+       vertical-align: bottom;
     }
     .logo {
        height: 65px;
@@ -67,7 +68,7 @@ ul {
    .logo {
         height: 65px;
         width: 65px;
-        vertical-align: middle;
+        vertical-align: top;
     }
     .nav-link:hover {
         border-bottom: none;
@@ -466,14 +467,34 @@ ul {
 }
 #menu {
     padding-right: 15px;
+    padding-left: 15px;
     padding-top: 20px;
     padding-bottom: 75px;
     background-color: #1C3B4D;
     min-height: 2100px;
 }
-#puzzle {
+.galImg {
     padding-top: 5vh;
-    max-width: 100%;
+    padding-right: 2vw;
+    width: 100%;
+    max-width:508px;
+    display:inline-block;
+}
+.img1 {
+    width:324px;
+    height:200px;
+}
+.img2 {
+    width:162px;
+    height:330px;
+}
+.img3 {
+    width:162px;
+    height:165px;
+}
+.img4 {
+    width:162px;
+    height:253px;
 }
 #lineadispMenu {
     border-bottom: 1px solid white;
@@ -589,7 +610,7 @@ ul {
 @media screen and (min-width: 768px){
     #menu {
         padding-right: 25px;
-        min-height: 1500px;
+        min-height: 1660px;
     }
     .textoMenu {
         font-size: 16px;
