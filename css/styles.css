@@ -499,30 +499,30 @@ ul {
     width:162px;
     height:253px;
 }
-.img-fluid {
+#menu .img-fluid {
     transition-property: transform;
     transition-duration: 0.2s;
 }
-.img-fluid:hover {
+#menu .img-fluid:hover {
     transform: scale(1.25);
 }
 #lineadispMenu {
     border-bottom: 1px solid white;
     width: 70px;
     position: absolute;
-    top: 2vh;
+    top: 6.1vh;
 }
 #displayMenu {
     font-family: sans-serif;
     font-size: 20px;
     letter-spacing: 0.75px;
     color: #dba646;
-    padding-top: 10px;
+    padding-top: 37px;
     position: absolute;
     top: 1.5vh;
 }
 #foods {
-    padding-top: 40px;
+    padding-top: 50px;
 }
 .textoMenu {
     font-size: 0.7rem;
@@ -550,7 +550,7 @@ ul {
 }
 #drinks {
     position: absolute;
-    top: 6vh;
+    top: 3.5vh;
 }
 .subtitle {
     padding-top: 10px;
