@@ -159,6 +159,8 @@ ul {
     padding-bottom: 28px;
     padding-left: 12px;
     padding-right: 0px;
+    transition-property: transform;
+    transition-duration: 0.2s;
 }
 #event {
     padding-left: 30px;
@@ -207,9 +209,30 @@ ul {
     border-bottom: 1px solid white;
     width: 100px;
 }
+@media screen and (max-width: 400px){
+    #popupSeries {
+        transition-property: transform;
+        transition-duration: 0.2s;        
+    }
+    #popupSeries:hover {
+        transform: scale(1.25);
+    }
+    #event {
+        padding-top: 20px;
+    }
+    #spEvent {
+        padding-bottom: 25px;
+    }
+    #NST {
+        font-size: 45x;
+    }
+    #tickets {
+        font-size: 25px;
+    }
+}
 @media screen and (max-width: 576px){
     #tasting {
-        height: 850px;
+        height: 930px;
     }
     #popupSeries {
         padding-top: 5px;
@@ -236,8 +259,11 @@ ul {
     }
 }
 @media screen and (max-width: 768px){
+    #popupSeries {
+        padding-top: 10px;
+    }
     #tasting {
-        height: 1050px; 
+        height: 930px; 
     }
     #NST {
         font-size: 56px;
@@ -478,10 +504,12 @@ ul {
 }
 .galImg {
     padding-top: 5vh;
-    padding-right: 2vw;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
-    max-width:508px;
+    max-width:600px;
     display:inline-block;
+    justify-content: center;
 }
 .img1 {
     width:324px;
@@ -565,14 +593,14 @@ ul {
     }
     #displayMenu {
         position: absolute;
-        top: 1.5vh;
+        top: 1.6vh;
         left: 30px;
     }
     .item {
         padding-top: 5px;
     }
     #foods {
-        padding-top: 35px;
+        padding-top: 50px;
         padding-left: 15px;
         padding-right: 0px;
     }
@@ -581,9 +609,10 @@ ul {
     }
     #drinks {
         position: absolute;
-        top: 25px;
+        top: 21px;
         padding-left: 0px;
         padding-right: 15px;
+        max-width: 300px;
     }
     .textoMenu {
         font-size: 12px;
@@ -616,6 +645,10 @@ ul {
         line-height: 0.99;
         padding-bottom: 5px;
     }
+    #drinks {
+        max-width: 300px;
+        padding-right: 15px;
+    }
 }
 @media screen and (min-width: 768px){
     #menu {
@@ -641,6 +674,16 @@ ul {
     }
     .textoMenu {
         font-size: 20px;
+    }
+}
+@media screen and (min-width: 999px) {
+    #menu {
+        min-height: 2000px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #menu {
+        min-height: 1900px;
     }
 }
 #chef {
